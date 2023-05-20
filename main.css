@@ -1,0 +1,64 @@
+/* CSS Variables */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    /* Light theme colors */
+    --light-background: #FFFFFF;
+    --light-text: #474747;
+    --light-accent: #8B0000;
+    --light-btn: rgb(0, 99, 0);
+    /* Dark theme colors */
+    --dark-background: #474747;
+    --dark-text: #D3D3D3;
+    --dark-accent: #FF0000;
+    --dark-btn: rgb(179, 255, 179);
+}
+
+body {
+    /* default to light theme */
+    background-color: var(--light-background);
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+body.dark-theme {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+}
+
+body.dark-theme h1, body.dark-theme h2, {
+    color: var(--dark-text);
+}
+
+body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+    color: var(--dark-accent);
+}
+
+button {
+    background-color : var(--light-btn);
+    color : var(--dark-text);
+}
+
+body.dark-theme button {
+    background-color: var(--dark-btn);
+    color: var(--light-text);
+}
+
+.r-btn {
+    border-radius:30px 0px 0px 30px;
+    padding: 0px 20px 0 20px;
+}
+
+.mid-btn {
+    border-radius: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.l-btn {
+    border-radius: 0px 30px 30px 0px;
+    padding: 0px 15px 0px 20px;
+}

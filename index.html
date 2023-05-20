@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content="logo.png">
+    <meta name="description" content="Registro fotográfico, El Carmen NL, por Sergio Aguirrre. Talleres y Mediación. Agenda tu Sesión">         
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" sizes="256x256" href="logo.png">
+    <link rel="icon" type="image/gif" sizes="256x256" href="logo.png">
+    <link rel="stylesheet" href="main.css">
+    <title>El Carmen NL - Sergio Aguirrre</title>
+</head>
+<body>
+    <header>
+        
+        <div>
+            <h1>Archivo Fotográfico</h1>
+        <h2 style="margin-top: -20px;">El Carmen N.L. México</h2>
+        <h3>📸 Sergio Aguirrre <span>2020 - 2023</span></h3>
+        <button class="r-btn" id="theme-toggle">Tema</button>
+        <button class="mid-btn" id="theme-toggle">Fototeca</button>
+        <button class="mid-btn" id="theme-toggle">Talleres</button>
+        <button class="l-btn" id="theme-toggle">Agenda</button>
+       
+       
+
+        </div>
+    </header>
+
+    
+
+    <section id="galeria">
+
+        <div class="fotos">
+            <div id="image-container">
+
+        </div>
+
+    </section>
+
+    <script>
+        const themeToggleButton = document.getElementById("theme-toggle");
+
+themeToggleButton.addEventListener("click", function() {
+    document.body.classList.toggle("dark-theme");
+});
+    </script>
+
+    <script>
+      // Function to fetch images and display
+function fetchAndDisplayImages() {
+    fetch('fotos.json')
+    .then(response => response.json())
+    .then(imagesArray => displayImages(imagesArray))
+    .catch(error => console.error('Error:', error));
+}
+
+// Display Images Function
+function displayImages(images) {
+    const imageContainer = document.getElementById('image-container');
+    imageContainer.innerHTML = ''; // clear the container
+
+    for (let i = 0; i < images.length; i++) {
+        let img = document.createElement('img');
+        img.src = images[i].src;
+        img.alt = images[i].alt;
+        imageContainer.appendChild(img);
+    }
+}
+
+window.onload = function() {
+    fetchAndDisplayImages();
+
+    const viewToggleButton = document.getElementById('view-toggle');
+    const imageContainer = document.getElementById('image-container');
+
+    viewToggleButton.addEventListener('click', function() {
+        imageContainer.classList.toggle('masonry');
+    });
+};
+
+
+    </script>
+</body>
+</html>
