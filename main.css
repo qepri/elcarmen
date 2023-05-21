@@ -31,6 +31,7 @@ header {
 .statment, p {
 
     text-align: center;
+    justify-content: left;
     font-family: Roboto;
     font-weight: normal;
     color: #474747;
