@@ -1,5 +1,6 @@
 /* CSS Variables */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
     /* Light theme colors */
@@ -180,6 +181,28 @@ body.dark-theme button {
     text-decoration: none;
     cursor: pointer;
 }
+
+.modal-navigation {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2em; /* adjust as needed */
+    cursor: pointer;
+}
+
+/* you may want to position these buttons */
+#prevButton {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+#nextButton {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
 
 
 footer {

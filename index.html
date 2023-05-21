@@ -9,6 +9,7 @@
     <link rel="icon" type="image/gif" sizes="256x256" href="logo.png">
     <link rel="icon" type="image/gif" sizes="256x256" href="logo.png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>El Carmen NL - Sergio Aguirrre</title>
 </head>
 <body>
@@ -47,94 +48,109 @@
             <span class="close">&times;</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
+         
+<button id="prevButton" class="modal-navigation"><i class="fas fa-arrow-left"></i></button>
+<button id="nextButton" class="modal-navigation"><i class="fas fa-arrow-right"></i></button>
+
+           
+
         </div>
     </section>
-    
-
     <script>
-document.addEventListener("DOMContentLoaded", function() {
-    fetchAndDisplayImages();
-
-    const viewToggleButton = document.getElementById('view-toggle');
-    const imageContainer = document.getElementById('image-container');
-
-    viewToggleButton.addEventListener('click', function() {
-        imageContainer.classList.toggle('masonry');
-    });
-});
-
-let imagesArray; // Hold the array of images
-let currentImageIndex = 0; // Keep track of the current image
-
-function fetchAndDisplayImages() {
-    fetch('diario_carmen.json')
-        .then(response => response.json())
-        .then(images => {
-            imagesArray = images; // Store the images array
-            displayImages(images);
-        })
-        .catch(error => console.error('Error:', error));
-}
-
-function displayImages(images) {
-    const imageContainer = document.getElementById('image-container');
-    imageContainer.innerHTML = '';
-
-    for (let i = 0; i < images.length; i++) {
-        let img = document.createElement('img');
-        img.src = images[i].src;
-        img.alt = images[i].alt;
-        img.classList.add('popup-img');
-        imageContainer.appendChild(img);
-    }
-    
-    let imgs = document.getElementsByClassName('popup-img');
-    for (let i = 0; i < imgs.length; i++) {
-        imgs[i].addEventListener('click', function(){
-            showModal(i); // Pass the index to the showModal function
+        document.addEventListener("DOMContentLoaded", function() {
+            fetchAndDisplayImages();
+        
+            const viewToggleButton = document.getElementById('view-toggle');
+            const imageContainer = document.getElementById('image-container');
+        
+            viewToggleButton.addEventListener('click', function() {
+                imageContainer.classList.toggle('masonry');
+            });
         });
-    }
-
-    var span = document.getElementsByClassName("close")[0];
-    span.onclick = function() { 
-        document.getElementById('myModal').style.display = "none";
-    }
-}
-
-// Show modal and set current image index
-function showModal(index) {
-    currentImageIndex = index;
-
-    var modal = document.getElementById('myModal');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-
-    modal.style.display = "block";
-    modalImg.src = imagesArray[index].src;
-    captionText.innerHTML = imagesArray[index].alt;
-}
-
-// Handle arrow key navigation
-document.addEventListener('keydown', function(event) {
-    var modal = document.getElementById('myModal');
-
-    if(modal.style.display === "block") { // only if modal is open
-        if(event.key === "ArrowRight") {
-            currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
-            showModal(currentImageIndex);
-        } else if(event.key === "ArrowLeft") {
+        
+        let imagesArray; // Hold the array of images
+        let currentImageIndex = 0; // Keep track of the current image
+        
+        function fetchAndDisplayImages() {
+            fetch('diario_carmen.json')
+                .then(response => response.json())
+                .then(images => {
+                    imagesArray = images; // Store the images array
+                    displayImages(images);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+        
+        function displayImages(images) {
+            const imageContainer = document.getElementById('image-container');
+            imageContainer.innerHTML = '';
+        
+            for (let i = 0; i < images.length; i++) {
+                let img = document.createElement('img');
+                img.src = images[i].src;
+                img.alt = images[i].alt;
+                img.classList.add('popup-img');
+                imageContainer.appendChild(img);
+            }
+            
+            let imgs = document.getElementsByClassName('popup-img');
+            for (let i = 0; i < imgs.length; i++) {
+                imgs[i].addEventListener('click', function(){
+                    showModal(i); // Pass the index to the showModal function
+                });
+            }
+        
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() { 
+                document.getElementById('myModal').style.display = "none";
+            }
+        }
+        
+        // Show modal and set current image index
+        function showModal(index) {
+            currentImageIndex = index;
+        
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+        
+            modal.style.display = "block";
+            modalImg.src = imagesArray[index].src;
+            captionText.innerHTML = imagesArray[index].alt;
+        }
+        
+        // Handle arrow key navigation
+        document.addEventListener('keydown', function(event) {
+            var modal = document.getElementById('myModal');
+        
+            if(modal.style.display === "block") { // only if modal is open
+                if(event.key === "ArrowRight") {
+                    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+                    showModal(currentImageIndex);
+                } else if(event.key === "ArrowLeft") {
+                    currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+                    showModal(currentImageIndex);
+                }
+            }
+        });
+        
+        // Add click event listeners to your buttons
+        document.getElementById('prevButton').addEventListener('click', function() {
+            // move to the previous image
             currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
             showModal(currentImageIndex);
-        }
-    }
-});
+        });
+        
+        document.getElementById('nextButton').addEventListener('click', function() {
+            // move to the next image
+            currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+            showModal(currentImageIndex);
+        });
+        </script>
+        
+    
 
-
-  
-
-    </script>
-
-    <footer>
+       <footer>
         <h5 style="font-family: Roboto; color: black; font-weight: normal; text-align: center;
         font-size: 20px;">
             Sergio Aguirrre © 2023 
