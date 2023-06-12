@@ -1,0 +1,31 @@
+{
+    "individual": {
+        "title": "Retrato Fotográfico",
+        "subtitle": "Sesiones Individual y Pareja",
+        "description1": "20 Fotografías Profesionales",
+        "description2": "Entrega Digital",
+        "price": "Promo: $750* MXN"
+    },
+    "xv": {
+        "title": "Retrato XV Años",
+        "subtitle": "Sesión Individual",
+        "description1": "35 Fotografías Profesionales",
+        "description2": "Entrega Digital",
+        "price": "Promo: $3750* MXN"
+    },
+    "boda": {
+        "title": "Retrato de Boda",
+        "subtitle": "Sesión de Pareja",
+        "description1": "50 Fotografías Profesionales",
+        "description2": "Entrega Digital",
+        "price": "Promo: $5000* MXN"
+    },
+    "graduacion": {
+        "title": "Retrato Graduado",
+        "subtitle": "Sesión Individual",
+        "description1": "10 Fotografías Profesionales",
+        "description2": "Entrega Digital",
+        "price": "Promo: $650* MXN"
+    }
+   
+}

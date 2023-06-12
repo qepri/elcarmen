@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://unpkg.com/petite-vue" defer init></script>
+</head>
+<body>
+  <div id="app">
+    <button @click="showForm = true">Launch Form</button>
+
+    <div v-if="showForm">
+      <form @submit.prevent="submitForm">
+        <label>Title (<= 10 characters): <input v-model="form.title" maxlength="10"></label><br>
+        <label>Name: <input v-model="form.name"></label><br>
+        <label>Age: <input v-model="form.age"></label><br>
+        <label>Description (<= 30 characters): <input v-model="form.description" maxlength="30"></label><br>
+        <label>Image: <input type="file" @change="onFileChange"></label><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div v-for="record in records" :key="record.id">
+      <h3>{{ record.title }}</h3>
+      <p>{{ record.description }}</p>
+      <p>Submitted at: {{ record.submissionTime }}</p>
+    </div>
+  </div>
+
+  <script>
+    new PetitVue({
+      el: '#app',
+      data() {
+        return {
+          form: {
+            title: '',
+            name: '',
+            age: '',
+            description: '',
+            image: null,
+          },
+          showForm: false,
+          records: [],
+          id: 0,
+        };
+      },
+      methods: {
+        onFileChange(e) {
+          this.form.image = e.target.files[0];
+          // Add your own logic here to handle the image file
+        },
+        submitForm() {
+          const submissionTime = new Date();
+          const formattedTime = `${submissionTime.getDate()}-${submissionTime.getMonth()+1}-${submissionTime.getFullYear()} ${submissionTime.getHours()}:${submissionTime.getMinutes()}`;
+
+          this.records.push({
+            id: this.id++,
+            title: this.form.title,
+            description: this.form.description,
+            submissionTime: formattedTime,
+          });
+
+          // Reset form
+          this.form.title = '';
+          this.form.name = '';
+          this.form.age = '';
+          this.form.description = '';
+          this.form.image = null;
+
+          this.showForm = false;
+        },
+      },
+    });
+  </script>
+</body>
+</html>

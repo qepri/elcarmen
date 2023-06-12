@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de ingresos</title>
+    <style>
+        .input-group {
+            margin-bottom: 1em;
+        }
+        .input-group label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-group">
+        <label for="total-clients">Total de clientes al mes:</label>
+        <input type="number" id="total-clients" min="0" value="0">
+    </div>
+    <div class="input-group">
+        <label for="lite-clients">Porcentaje de clientes Paquete Lite:</label>
+        <input type="number" id="lite-clients" min="0" max="100" value="0">
+    </div>
+    <div class="input-group">
+        <label for="basic-clients">Porcentaje de clientes Paquete Básico:</label>
+        <input type="number" id="basic-clients" min="0" max="100" value="0">
+    </div>
+    <div class="input-group">
+        <label for="xv-clients">Porcentaje de clientes Paquete XV:</label>
+        <input type="number" id="xv-clients" min="0" max="100" value="0">
+    </div>
+    <div class="input-group">
+        <label for="wedding-clients">Porcentaje de clientes Paquete Bodas:</label>
+        <input type="number" id="wedding-clients" min="0" max="100" value="0">
+    </div>
+    <div class="input-group">
+        <label for="graduation-clients">Porcentaje de clientes Paquete Graduación:</label>
+        <input type="number" id="graduation-clients" min="0" max="100" value="0">
+    </div>
+    <button onclick="calculateRevenue()">Calcular ingresos</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateRevenue() {
+            var totalClients = document.getElementById('total-clients').value;
+            var liteClients = document.getElementById('lite-clients').value / 100;
+            var basicClients = document.getElementById('basic-clients').value / 100;
+            var xvClients = document.getElementById('xv-clients').value / 100;
+            var weddingClients = document.getElementById('wedding-clients').value / 100;
+            var graduationClients = document.getElementById('graduation-clients').value / 100;
+
+            if(totalClients < 0){
+                alert("El total de clientes no puede ser negativo.");
+                return;
+            }
+
+            var totalPercentage = liteClients + basicClients + xvClients + weddingClients + graduationClients;
+            if(totalPercentage > 1){
+                alert("Los porcentajes no pueden sumar más de 100%.");
+                return;
+            }
+
+            var litePrice = 750;
+            var basicPrice = 1200;
+            var xvPrice = 3750;
+            var weddingPrice = 5000;
+            var graduationPrice = 650;
+
+            var totalRevenue = totalClients * ((liteClients * litePrice) + (basicClients * basicPrice) + (xvClients * xvPrice) + (weddingClients * weddingPrice) + (graduationClients * graduationPrice));
+
+            documentOops,
+            document.getElementById('result').innerHTML = "Ingresos estimados: " + totalRevenue + " pesos";
+        }
+    </script>
+</body>
+</html>
