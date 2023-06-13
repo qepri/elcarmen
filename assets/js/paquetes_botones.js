@@ -26,5 +26,8 @@ function updateContent(key) {
         // Assuming that you also have a '.precio a' element in '.paquete_foto_smol' div
         // If not, you can comment or remove the line below.
         document.querySelector('.paquete_foto_smol .precio a').innerText = content[key].price;
+        
+        // Update the images to match the current category
+        updateImages(key);
     }
 }
