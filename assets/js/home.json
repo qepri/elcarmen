@@ -2,22 +2,68 @@
 
  { "src":  "assets/img/home/FURIAMUSICAL-09802-1.jpg", "category": "musica" },
  { "src":  "assets/img/home/IMG_0504-9.jpg", "category": "individual" },
+ { "src": "assets/img/home/ed-5498.jpg", "category": "individual" },
+ { "src": "assets/img/home/ed-5914.jpg", "category": "individual" },
+ { "src": "assets/img/home/ed-6018.jpg", "category": "individual" },
+
+
  { "src":  "assets/img/home/IMG_2042-25-17.jpg", "category": "grupo" },
  { "src":  "assets/img/home/IMG_2452-11.jpg", "category": "grupo" },
- { "src":  "assets/img/home/IMG_2658-16.jpg", "category": "individual" },
+ 
+
  { "src":  "assets/img/home/IMG_4159-14.jpg", "category": "estudio" },
  { "src":  "assets/img/home/IMG_4390-15.jpg", "category": "estudio" },
+
  { "src":  "assets/img/home/IMG_7236-6.jpg", "category": "xv" },
  { "src":  "assets/img/home/IMG_7349-7.jpg", "category": "xv" },
+ { "src":  "assets/img/home/XVARIADNE-8-8.jpg", "category": "xv" },
+
  { "src":  "assets/img/home/IMG_7605-5.jpg", "category": "grupo" },
  { "src":  "assets/img/home/IMG_8112-4.jpg", "category": "grupo" },
+
  { "src":  "assets/img/home/KarlaC2018-4228-13.jpg", "category": "estudio" },
  { "src":  "assets/img/home/retratos--12.jpg", "category": "individual" },
  { "src":  "assets/img/home/retratos-9166-10.jpg", "category": "individual" },
- { "src":  "assets/img/home/TRAKALOSA--3.jpg", "category": "graduacion" },
+ { "src":  "assets/img/home/IMG_2658-16.jpg", "category": "individual" },
+ { "src": "assets/img/home/ed-5675.jpg", "category": "individual" },
+ { "src":  "assets/img/home/TRAKALOSA--3.jpg", "category": "musica" },
  { "src":  "assets/img/home/TRAKALOSA-000735-18.jpg", "category": "individual" },
- { "src":  "assets/img/home/XVARIADNE-8-8.jpg", "category": "xv" },
- { "src":  "assets/img/home/BARONSCARPIA-191209-2.jpg", "category": "musica" },
- { "src":  "assets/img/home/FURIAMUSICAL-09781-19.jpg", "category": "musica" }
+
+
+ { "src":  "assets/img/home/FURIAMUSICAL-09781-19.jpg", "category": "musica" },
+ { "src":  "assets/img/home/FURIAMUSICAL-09781-19.jpg", "category": "musica" },
+
+ { "src": "assets/img/home/BARONSCARPIA-191209-2.jpg", "category": "individual" },
+
+ { "src": "assets/img/home/BodaFranciscoYazmin-IMG_3223104-2.jpg", "category": "boda" },
+ { "src": "assets/img/home/BodaFranciscoYazmin-IMG_3479219-4.jpg", "category": "boda" },
+ { "src": "assets/img/home/BodaFranciscoYazmin-IMG_3491226-5.jpg", "category": "boda" },
+ { "src": "assets/img/home/BodaFranciscoYazmin-IMG_119513-1.jpg", "category": "boda" },
+ { "src": "assets/img/home/BodaFranciscoYazmin-IMG_3363166-3.jpg", "category": "boda" },
+
+
+ { "src": "assets/img/home/EVA2-5.jpg", "category": "individual" },
+ { "src": "assets/img/home/EVA_01-1.jpg", "category": "individual" },
+ { "src": "assets/img/home/EVA_EEPE-4-2.jpg", "category": "individual" },
+ { "src": "assets/img/home/eva_mascolores-2-4.jpg", "category": "individual" },
+ { "src": "assets/img/home/eva_mascolores-3.jpg", "category": "individual" },
+
+ 
+ { "src": "assets/img/home/IMG_3976-1.jpg", "category": "evento" },
+ { "src": "assets/img/home/IMG_1860-24.jpg", "category": "evento" },
+ { "src": "assets/img/home/IMG_9833-18.jpg", "category": "evento" },
+ { "src": "assets/img/home/IMG_4495-3.jpg", "category": "evento" },
+ { "src": "assets/img/home/IMG_4529-4.jpg", "category": "evento" },
+ { "src": "assets/img/home/IMG_4791-6.jpg", "category": "evento" },
+
+ { "src": "assets/img/home/IMG_1839-22.jpg", "category": "evento" },
+
+ { "src": "assets/img/home/Poli--1.jpg", "category": "estudio" },
+ { "src": "assets/img/home/Poli--4-3.jpg", "category": "estudio" },
+ { "src": "assets/img/home/Poli-4827-2.jpg", "category": "estudio" }
+
+ 
      ]
+
+
     

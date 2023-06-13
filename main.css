@@ -54,7 +54,7 @@ body.dark-theme {
     color: var(--dark-text);
 }
 
-body.dark-theme h1, body.dark-theme h2, {
+body.dark-theme h1, body.dark-theme h2 {
     color: var(--dark-text);
 }
 
@@ -208,6 +208,9 @@ body.dark-theme button {
 
 
 
+
+
+
 footer {
     font-family: Roboto;
      color: black; 
@@ -215,3 +218,4 @@ footer {
       text-align: center;
         font-size: 20px;
 }
+

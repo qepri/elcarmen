@@ -8,7 +8,7 @@
       "category": "individual"
     },
     "xv": {
-      "title": "XV Años",
+      "title": "Retrato XV Años",
       "subtitle": "Fotografía para XV Años",
       "description1": "35 Fotografías Profesionales",
       "description2": "Entrega Digital",
@@ -23,13 +23,13 @@
       "price": "Promo: $5000* MXN",
       "category": "boda"
     },
-    "graduacion": {
-      "title": "Fotografía de Graduación",
-      "subtitle": "Sesión de Graduación",
-      "description1": "10 Fotografías Profesionales",
+    "evento": {
+      "title": "Registro de Evento",
+      "subtitle": "Preservando tus memorias.",
+      "description1": "Fotografías Profesionales",
       "description2": "Entrega Digital",
-      "price": "Promo: $650* MXN",
-      "category": "graduacion"
+      "price" : "Promo: 3 horas $1500* MXN",
+      "category": "evento"
     }
   }
   
