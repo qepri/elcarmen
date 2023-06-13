@@ -1,10 +1,10 @@
 [
 
  { "src":  "assets/img/home/FURIAMUSICAL-09802-1.jpg", "category": "musica" },
- { "src":  "assets/img/home/IMG_0504-9.jpg", "category": "retrato" },
+ { "src":  "assets/img/home/IMG_0504-9.jpg", "category": "individual" },
  { "src":  "assets/img/home/IMG_2042-25-17.jpg", "category": "grupo" },
  { "src":  "assets/img/home/IMG_2452-11.jpg", "category": "grupo" },
- { "src":  "assets/img/home/IMG_2658-16.jpg", "category": "retrato" },
+ { "src":  "assets/img/home/IMG_2658-16.jpg", "category": "individual" },
  { "src":  "assets/img/home/IMG_4159-14.jpg", "category": "estudio" },
  { "src":  "assets/img/home/IMG_4390-15.jpg", "category": "estudio" },
  { "src":  "assets/img/home/IMG_7236-6.jpg", "category": "xv" },
@@ -12,10 +12,10 @@
  { "src":  "assets/img/home/IMG_7605-5.jpg", "category": "grupo" },
  { "src":  "assets/img/home/IMG_8112-4.jpg", "category": "grupo" },
  { "src":  "assets/img/home/KarlaC2018-4228-13.jpg", "category": "estudio" },
- { "src":  "assets/img/home/retratos--12.jpg", "category": "retrato" },
- { "src":  "assets/img/home/retratos-9166-10.jpg", "category": "retrato" },
+ { "src":  "assets/img/home/retratos--12.jpg", "category": "individual" },
+ { "src":  "assets/img/home/retratos-9166-10.jpg", "category": "individual" },
  { "src":  "assets/img/home/TRAKALOSA--3.jpg", "category": "graduacion" },
- { "src":  "assets/img/home/TRAKALOSA-000735-18.jpg", "category": "retrato" },
+ { "src":  "assets/img/home/TRAKALOSA-000735-18.jpg", "category": "individual" },
  { "src":  "assets/img/home/XVARIADNE-8-8.jpg", "category": "xv" },
  { "src":  "assets/img/home/BARONSCARPIA-191209-2.jpg", "category": "musica" },
  { "src":  "assets/img/home/FURIAMUSICAL-09781-19.jpg", "category": "musica" }
