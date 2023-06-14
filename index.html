@@ -1,164 +1,133 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:image" content="logo.png">
-    <meta name="description" content="Registro fotográfico, El Carmen NL, por Sergio Aguirrre. Talleres y Mediación. Agenda tu Sesión">         
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/gif" sizes="256x256" href="logo.png">
-    <link rel="icon" type="image/gif" sizes="256x256" href="logo.png">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>El Carmen NL - Sergio Aguirrre</title>
+    <title>Agenda tu sesión</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+  <!-- <div class="sobremi">
+    <img src="assets/img/diario_elcarmen/IMG_20220829_185908_1-19.jpg" alt="" 
+    style="max-width: 512px; max-height: 15vh; object-fit: contain;">
+    <h4>Sobre mi</h4>
+  
+  </div> -->
+   
+  <div class="paquete_foto"
+  style="
+  position: fixed;
+  padding: 5px;
+  margin-left:20px ;
+  top: 0;
+  left: 0;
+  background-color: #ffffff62;">
     
-    <header>
-        <h2 style="padding-top: 10px;" >El Carmen N.L. México</h2>
-        <h3 style="margin-top: -5px; text-align: center;">
-            📸 Sergio Aguirrre </h3>
-    </header>
+  <h1>Retrato Fotográfico</h1>
+  <h2>Momentos inolvidables</h2>
+  <p>Fotografías Profesionales</p>
+  <p>Entrega Digital</p>
+  <div
+  style="display:block">
+  
+  <p class="precio"> <a href="">
+    Paquetes Verano 2023</a></p></div>
+  </div>
+  
+    <div class="content flyer">
     
-
-    <div style="text-align: center; margin-top: -15px;">
-        <button class="r-btn" id="theme-toggle">Tema</button>
-        <button class="mid-btn" id="view-toggle" >Fototeca</button>
-        <button class="mid-btn" >Talleres</button>
-        <button class="l-btn" >Agenda</button>
-    </div>
     
-
-
-
-    <div class="statment">
-        <p> Reflejos de algunas buenas vistas.
-        </p>
-        <p>
-            Diario de mis andares en la comunidad, compartiendo como tallerista y artista/humano.
-            Breve documentación de mis experiencias; la creación no es en un sólo lugar. 
-        </p>
+      <section>
+     
+    <div class="buttones">
+      <button onclick="updateContent('individual')">RETRATO</button>
+      <button onclick="updateContent('xv')">XV AÑOS</button>
+      <button onclick="updateContent('boda')">BODA</button>
+      <button onclick="updateContent('evento')">EVENTO</button>
+     
       
+
+
     </div>
 
-
+    <div class="nav_mobile">
+      <button onclick="toggleDropdown()" class="dropdown-btn">Sesiones Fotográficas</button>
+      <div id="dropdown" class="dropdown-content">
+        <a onclick="updateContent('individual')" href="#">Individual</a>
+        <a onclick="updateContent('xv')" href="#">XV años</a>
+        <a onclick="updateContent('boda')" >Boda</a>
+        <a onclick="updateContent('evento')" >EVENTO</a>
+      </div>
+    </div>
     
 
-    <section id="galeria">
-        <div class="fotos_main">
-            <div id="image-container" class="fotos masonry"></div>
-        </div>
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-         
-<button id="prevButton" class="modal-navigation"><i class="fas fa-arrow-left"></i></button>
-<button id="nextButton" class="modal-navigation"><i class="fas fa-arrow-right"></i></button>
+<div class="fixed-size-div">
+    <div id="image-slider" class=" img_cover">
+      <img id="slider-image" src="" alt="Image">
+   
+  </div>
+</div>
 
-           
+  <script src="assets/js/slider.js"></script>
 
-        </div>
-    </section>
+    <!-- <div class="img_cover">  
+      <img  src="assets/img/individual/SergioAguirrreRetrato3.jpg" alt="" width="100%">
+    </div>  -->
+    
+    
+    <div class="paquete_foto_smol"
+    style="
+    position: relative;
+    padding: 5px;
+    background-color: #ffffff00;">
+      
+    <h1>Retrato Fotográfico</h1>
+    
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <div
+    style="
+    display:block"> <p class="precio"> <a href="">Promo: $750 MXN</a></p></div>
+    </div>
+  </section>
+    <section
+    style="
+    text-align: center;
+    bottom: 0;"
+    >
+    <div>
+      <h4>AGENDA TU SESIÓN</h4>
+    </div>
+
+    <script src="assets/js/paquetes_botones.js"></script>      
+    
+
+    
+    <p class="notes" >Nuevo León Mex</p>
+   <a href="sobremi.html"
+  
+   > <h4
+   style=" 
+   color:rgb(45, 45, 45);   font-weight: 100;"
+   >Sergio Aguirrre 2023</h4></a>
+       
+
+        
+    </div>
+  </section>
+    
+	<a href="https://wa.me/8119243339?text=Hola!%20Me%20gustaría%20saber%20¿qué%20fechas%20tienen%20disponibles?" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetchAndDisplayImages();
-        
-            const viewToggleButton = document.getElementById('view-toggle');
-            const imageContainer = document.getElementById('image-container');
-        
-            viewToggleButton.addEventListener('click', function() {
-                imageContainer.classList.toggle('masonry');
-            });
-        });
-        
-        let imagesArray; // Hold the array of images
-        let currentImageIndex = 0; // Keep track of the current image
-        
-        function fetchAndDisplayImages() {
-            fetch('diario_carmen.json')
-                .then(response => response.json())
-                .then(images => {
-                    imagesArray = images; // Store the images array
-                    displayImages(images);
-                })
-                .catch(error => console.error('Error:', error));
-        }
-        
-        function displayImages(images) {
-            const imageContainer = document.getElementById('image-container');
-            imageContainer.innerHTML = '';
-        
-            for (let i = 0; i < images.length; i++) {
-                let img = document.createElement('img');
-                img.src = images[i].src;
-                img.alt = images[i].alt;
-                img.classList.add('popup-img');
-                imageContainer.appendChild(img);
-            }
-            
-            let imgs = document.getElementsByClassName('popup-img');
-            for (let i = 0; i < imgs.length; i++) {
-                imgs[i].addEventListener('click', function(){
-                    showModal(i); // Pass the index to the showModal function
-                });
-            }
-        
-            var span = document.getElementsByClassName("close")[0];
-            span.onclick = function() { 
-                document.getElementById('myModal').style.display = "none";
-            }
-        }
-        
-        // Show modal and set current image index
-        function showModal(index) {
-            currentImageIndex = index;
-        
-            var modal = document.getElementById('myModal');
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-        
-            modal.style.display = "block";
-            modalImg.src = imagesArray[index].src;
-            captionText.innerHTML = imagesArray[index].alt;
-        }
-        
-        // Handle arrow key navigation
-        document.addEventListener('keydown', function(event) {
-            var modal = document.getElementById('myModal');
-        
-            if(modal.style.display === "block") { // only if modal is open
-                if(event.key === "ArrowRight") {
-                    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
-                    showModal(currentImageIndex);
-                } else if(event.key === "ArrowLeft") {
-                    currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
-                    showModal(currentImageIndex);
-                }
-            }
-        });
-        
-        // Add click event listeners to your buttons
-        document.getElementById('prevButton').addEventListener('click', function() {
-            // move to the previous image
-            currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
-            showModal(currentImageIndex);
-        });
-        
-        document.getElementById('nextButton').addEventListener('click', function() {
-            // move to the next image
-            currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
-            showModal(currentImageIndex);
-        });
-        </script>
-        
-    
+      function toggleDropdown() {
+  const dropdownContent = document.getElementById("dropdown");
+  dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+}
 
-       <footer>
-        <h5 style="font-family: Roboto; color: black; font-weight: normal; text-align: center;
-        font-size: 20px;">
-            Sergio Aguirrre © 2023 
-        </h5>
-    </footer>
+    </script>
 </body>
 </html>
