@@ -1,0 +1,203 @@
+{
+    "fotografos pioneros": [
+      {
+        "nombre": "Joseph Nicéphore Niépce",
+        "nacimiento_muerte": "1765–1833",
+        "nacionalidad": "francés",
+        "contribuciones": "A menudo se le considera el inventor de la fotografía. Es más conocido por producir la primera fotografía conocida en 1826 o 1827, conocida como 'Vista desde la ventana en Le Gras'."
+      },
+      {
+        "nombre": "Louis Daguerre",
+        "nacimiento_muerte": "1787–1851",
+        "nacionalidad": "francés",
+        "contribuciones": "Es reconocido por su invención del proceso de daguerrotipo de fotografía. Su proceso fotográfico fue el primero en ser divulgado al público y disponible comercialmente en 1839."
+      },
+      {
+        "nombre": "William Henry Fox Talbot",
+        "nacimiento_muerte": "1800–1877",
+        "nacionalidad": "inglés",
+        "contribuciones": "Inventó los procesos de papel salado y calotipo, precursores de los procesos fotográficos de finales del siglo XIX y XX. Su trabajo en la década de 1830 en reproducción fotomecánica llevó a la creación del proceso de grabado fotoglífico."
+      },
+      {
+        "nombre": "Hércules Florence",
+        "nacimiento_muerte": "1804–1879",
+        "nacionalidad": "franco-brasileño",
+        "contribuciones": "Conocido como el inventor aislado de la fotografía en Brasil, tres años antes que Daguerre. Se refirió a su proceso, en 1834, como 'Photographie'."
+      },
+      {
+        "nombre": "John Herschel",
+        "nacimiento_muerte": "1792–1871",
+        "nacionalidad": "inglés",
+        "contribuciones": "Hizo contribuciones significativas al nuevo campo de la fotografía, y en algunos años utilizó el término 'fotografía', 'negativo' y 'positivo'."
+      }
+    ]
+  }
+
+  {
+    "fotografos pictorialistas": [
+      {
+        "nombre": "Julia Margaret Cameron",
+        "nacimiento_muerte": "1815–1879",
+        "nacionalidad": "británica",
+        "contribuciones": "Julia Margaret Cameron es conocida por su enfoque en el retrato en el que creaba imágenes intensamente dramáticas y emotivas. Utilizaba enfoque suave y técnicas de iluminación que a menudo se consideraban errores técnicos, pero que a ella le permitieron destacar el aspecto pictórico y artístico de la fotografía."
+      },
+      {
+        "nombre": "Robert Demachy",
+        "nacimiento_muerte": "1859–1936",
+        "nacionalidad": "francés",
+        "contribuciones": "Robert Demachy es notable por su uso de técnicas pictorialistas como la impresión al carbón y la goma bicromatada, que permitieron un alto grado de manipulación artística. Su técnica distintiva de 'estriado' dio a sus impresiones una apariencia similar a la de una pintura al óleo."
+      },
+      {
+        "nombre": "Peter Henry Emerson",
+        "nacimiento_muerte": "1856–1936",
+        "nacionalidad": "británico",
+        "contribuciones": "Emerson es notable por su enfoque de 'fotografía naturalista', en la que buscaba capturar la vida y el paisaje de East Anglia en su estado natural, sin intervención o manipulación. Sus imágenes tienen un aspecto suave y a menudo están centradas en la vida rural y los paisajes."
+      },
+      {
+        "nombre": "Frank Eugene",
+        "nacimiento_muerte": "1865–1936",
+        "nacionalidad": "americano-alemán",
+        "contribuciones": "Frank Eugene fue conocido por su manipulación de negativos, incluso arañando y dibujando directamente sobre ellos antes de la impresión, lo que le daba a sus fotografías una calidad pictórica distintiva. Sin embargo, él no fue miembro de Photo-Secession."
+      },
+      {
+        "nombre": "Constant Puyo",
+        "nacimiento_muerte": "1857–1933",
+        "nacionalidad": "francés",
+        "contribuciones": "Constant Puyo es conocido por sus imágenes suaves y oníricas que capturaban la belleza y la luz en la vida cotidiana y los paisajes. También es notable por sus escritos teóricos sobre la fotografía como una forma de arte."
+      }
+    ]
+  }
+  
+
+  {
+    "fotografos Directos": [
+      {
+        "nombre": "Alfred Stieglitz",
+        "nacimiento_muerte": "1864–1946",
+        "nacionalidad": "americano",
+        "contribuciones": "Stieglitz fue el fundador del grupo Photo-Secession y promovió la fotografía como una forma de arte. Es reconocido por su capacidad para capturar la esencia de la vida moderna, especialmente en su serie 'The Steerage' y sus retratos de la artista Georgia O'Keeffe."
+      },
+      {
+        "nombre": "Edward Steichen",
+        "nacimiento_muerte": "1879–1973",
+        "nacionalidad": "luxemburgués-americano",
+        "contribuciones": "Steichen fue un miembro importante de la Photo-Secession y director de fotografía en el Museo de Arte Moderno. Su fotografía 'The Pond—Moonlight' es una de las imágenes más caras jamás vendidas. Sus retratos y fotografías de moda definen el estándar de la fotografía comercial de su época."
+      },
+      {
+        "nombre": "Gertrude Käsebier",
+        "nacimiento_muerte": "1852–1934",
+        "nacionalidad": "americano",
+        "contribuciones": "Käsebier fue una de las fundadoras de la Photo-Secession y fue conocida por sus retratos de la vida familiar y de nativos americanos. Su habilidad para capturar la intimidad y la humanidad en sus sujetos la distingue."
+      },
+      {
+        "nombre": "Clarence H. White",
+        "nacimiento_muerte": "1871–1925",
+        "nacionalidad": "americano",
+        "contribuciones": "Clarence H. White fue un miembro de la Photo-Secession que se destacó por sus retratos y estudios de naturaleza y vida doméstica, enfocándose en capturar la luz y la atmósfera."
+      },
+      {
+        "nombre": "Alvin Langdon Coburn",
+        "nacimiento_muerte": "1882–1966",
+        "nacionalidad": "americano-británico",
+        "contribuciones": "Coburn fue uno de los miembros más jóvenes de la Photo-Secession y fue conocido por su experimentación con perspectivas inusuales y abstracción en la fotografía. Su serie 'Vortographs' fue la primera exhibición dedicada a la fotografía abstracta."
+      },
+      {
+        "nombre": "F. Holland Day",
+        "nacimiento_muerte": "1864–1933",
+        "nacionalidad": "americano",
+        "contribuciones": "F. Holland Day fue un defensor temprano de la fotografía como una forma de arte y un contemporáneo de Stieglitz. Su obra a menudo exploraba temas religiosos y mitológicos, y se destacaba por su uso de la luz y la sombra para crear atmósferas dramáticas."
+      },
+      {
+        "nombre": "Frederick H. Evans",
+        "nacimiento_muerte": "1853–1943",
+        "nacionalidad": "británico",
+        "contribuciones": "Evans fue conocido por sus imágenes arquitectónicas, especialmente de catedrales inglesas, que destacan por su atención al detalle y a la luz. Aunque no fue miembro oficial de la Photo-Secession, su trabajo fue promovido por Stieglitz y se muestra a menudo junto al de los miembros del grupo."
+      }
+    ]
+  }
+
+  {
+    "fotografos Modernistas": [
+      {
+        "nombre": "Paul Strand",
+        "nacimiento_muerte": "1890–1976",
+        "nacionalidad": "americano",
+        "contribuciones": "Innovador en su enfoque, Paul Strand destaca por su rechazo de las técnicas pictorialistas en favor de una fotografía más directa y honesta. Sus fotografías a menudo acentúan patrones geométricos y líneas rectas, lo que da a su trabajo una sensación de rigidez y estabilidad."
+      },
+      {
+        "nombre": "Edward Weston",
+        "nacimiento_muerte": "1886–1958",
+        "nacionalidad": "americano",
+        "contribuciones": "Cada imagen de Edward Weston es una celebración de la forma y la textura. Famoso por sus bodegones y desnudos, sus fotografías se caracterizan por su nitidez y detalles increíblemente precisos, lo que demuestra su interés en la belleza inherente de sus sujetos."
+      },
+      {
+        "nombre": "Imogen Cunningham",
+        "nacimiento_muerte": "1883–1976",
+        "nacionalidad": "americano",
+        "contribuciones": "Imogen Cunningham, famosa por sus fotografías de flores y desnudos, se distingue por su visión intrincada y detallada. Su habilidad para capturar la interacción de la luz y la sombra en formas naturales trae una profundidad única y tangible a sus imágenes."
+      },
+      {
+        "nombre": "Berenice Abbott",
+        "nacimiento_muerte": "1898–1991",
+        "nacionalidad": "americano",
+        "contribuciones": "Berenice Abbott es conocida por su serie 'Changing New York', que documenta la transformación de la ciudad durante la década de 1930. Enfocándose en la arquitectura y los paisajes urbanos, Abbott captura el dinamismo y la vitalidad de la ciudad con un estilo directo y sin adornos."
+      },
+      {
+        "nombre": "André Kertész",
+        "nacimiento_muerte": "1894–1985",
+        "nacionalidad": "húngaro",
+        "contribuciones": "Kertész, un maestro en el uso de la luz y la composición, tiene una amplia variedad de trabajos que van desde la fotografía de calle hasta los bodegones. Su tendencia a encontrar belleza en los detalles mundanos y su habilidad para transformar escenas cotidianas en obras de arte son lo que lo distingue de sus contemporáneos."
+      },
+      {
+        "nombre": "Laszlo Moholy-Nagy",
+        "nacimiento_muerte": "1895–1946",
+        "nacionalidad": "húngaro",
+        "contribuciones": "Moholy-Nagy, famoso por sus experimentos con luz y sombras, así como por su trabajo en la Escuela de la Bauhaus, es conocido por sus fotografías abstractas. A través de su uso innovador de la perspectiva y su disposición a experimentar con materiales y técnicas, Moholy-Nagy expandió las posibilidades de la fotografía como medio."
+      }
+    ]
+  }
+  
+  
+  {
+    "fotoperiodismo": [
+      {
+        "nombre": "Robert Capa",
+        "nacimiento_muerte": "1913–1954",
+        "nacionalidad": "húngaro",
+        "contribuciones": "Robert Capa, cuyo verdadero nombre era Endre Friedmann, es célebre por su cobertura valiente y visceral de cinco guerras distintas. La intensidad de sus imágenes, a menudo tomadas en medio del peligro, convierten a Capa en un fotoperiodista icónico. 'Si tus fotos no son lo suficientemente buenas, es que no estás lo suficientemente cerca', solía decir."
+      },
+      {
+        "nombre": "Margaret Bourke-White",
+        "nacimiento_muerte": "1904–1971",
+        "nacionalidad": "americano",
+        "contribuciones": "Margaret Bourke-White, la primera fotoperiodista femenina en ser contratada por la revista Life y la primera mujer en cubrir combates en la Segunda Guerra Mundial, fue conocida por su enfoque audaz y su deseo de estar 'donde estaba la acción'. Su icónica imagen de la Gran Depresión, 'At the Time of the Louisville Flood', muestra su habilidad para retratar la humanidad en tiempos de crisis."
+      },
+      {
+        "nombre": "Henri Cartier-Bresson",
+        "nacimiento_muerte": "1908–2004",
+        "nacionalidad": "francés",
+        "contribuciones": "Considerado un maestro del 'momento decisivo', Cartier-Bresson tenía un talento incomparable para capturar la vida tal como sucedía. A través de su lente, situaciones cotidianas se transformaban en escenas poéticas llenas de significado."
+      },
+      {
+        "nombre": "Dorothea Lange",
+        "nacimiento_muerte": "1895–1965",
+        "nacionalidad": "americano",
+        "contribuciones": "Dorothea Lange es más famosa por su trabajo durante la Gran Depresión, especialmente la foto 'Madre Migrante'. Sus fotografías, cargadas de emociones y humanidad, convirtieron a Lange en una voz visual crucial en tiempos difíciles."
+      },
+      {
+        "nombre": "W. Eugene Smith",
+        "nacimiento_muerte": "1918–1978",
+        "nacionalidad": "americano",
+        "contribuciones": "Eugene Smith es mejor conocido por sus poderosos ensayos fotográficos, en particular 'Country Doctor'. Sus imágenes, a menudo fuertes y profundamente emocionales, tratan de capturar la esencia de sus sujetos con sinceridad y respeto."
+      },
+      {
+        "nombre": "Carol Guzy",
+        "nacimiento_muerte": "1956–presente",
+        "nacionalidad": "americano",
+        "contribuciones": "Cuatro veces ganadora del Premio Pulitzer, Carol Guzy es conocida por su habilidad para capturar momentos conmovedores en medio de crisis humanitarias. A través de su cámara, Guzy da voz a aquellos que a menudo son olvidados o ignorados."
+      }
+    ]
+  }
+  
+  
+  

@@ -25,8 +25,32 @@ body {
 }
 
 header {
-    display: grid;
-    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: white;   
+}
+
+header h3 {
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 25px;
+}
+
+header button a {
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+header button:hover{
+    background-color: #474747;
+    color: white;
+ 
+}
+
+header a:hover {
+    background-color: #47474;
+    color: white;
 }
 
 .statment {
@@ -63,16 +87,21 @@ body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
 }
 
 button {
-    background-color : var(--light-btn);
-    color : var(--dark-text);
-    font-size: 20px;
+   
+    background-color : rgb(255, 255, 255) ;
+    font-size: 16px;
+    letter-spacing: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
 }
+
 
 body.dark-theme button {
     background-color: var(--dark-btn);
     color: var(--light-text);
 }
-
+/* 
 .r-btn {
     border-radius:30px 0px 0px 30px;
     padding: 0px 20px 0 20px;
@@ -86,32 +115,32 @@ body.dark-theme button {
 .l-btn {
     border-radius: 0px 30px 30px 0px;
     padding: 0px 15px 0px 20px;
-}
+} */
 
 
 .fotos_main {
     display: flex;
     justify-content: center;
-   
-    padding-left: 3em;
-    padding-right: 3em;
+
+    padding-left: 2em;
+    padding-right: 2em;
     padding-top: 20px;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 
 .fotos, img {
    
-   padding: 3%;
-    width: 60rem;
+   padding: 1%;
+    width: 100%;
     height:auto;
 }
 
 .masonry {
     /* Break columns at every size */
-    column-count: 3;
-    column-gap: 1em;
+    column-count: 5;
+    column-gap: .5em;
 }
 
 .masonry img {

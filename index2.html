@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Change</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+    body, html {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.section {
+    margin-top: 38vh;
+    width: 30em;
+    height: 66.6%;
+    display: flex;
+    background-color: #474747;
+    border-radius: 10px;
+   
+}
+
+.column {
+    flex: 1;
+    height: 100%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+
+    margin: 25px;
+    /* margin-top: 33.3%;
+    margin-left: 23%;
+    max-width: 100%;
+    max-height: 100%; */
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 30vw;
+}
+
+.text-link {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+</style>
+
+
+    <div class="section">
+        <div class="column image">
+            <img src="https://via.placeholder.com/200" id="dynamic-image">
+    
+        </div>
+        <div class="column text">
+            <a href="#" class="text-link" data-img="https://via.placeholder.com/200/111">Fotografía</a>
+            <a href="#" class="text-link" data-img="https://via.placeholder.com/200/111">Talleres</a>
+            <a href="#" class="text-link" data-img="https://via.placeholder.com/200/222">Arte</a>
+            <a href="#" class="text-link" data-img="https://via.placeholder.com/200/222">Diseño Web</a>
+            <a href="#" class="text-link" data-img="https://via.placeholder.com/200/333">Entrevistas</a>
+
+            <div>
+                <h3>Sergio Aguirrre 2023</h3>
+            </div>
+        </div>
+     
+    </div>
+    <script>
+        document.querySelectorAll('.text-link').forEach(link => {
+    link.addEventListener('mouseover', function() {
+        document.querySelector('#dynamic-image').src = this.dataset.img;
+    });
+});
+
+    </script>
+</body>
+</html>
