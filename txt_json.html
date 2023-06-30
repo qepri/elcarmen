@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: grid;
+            justify-content: center;
+            background-color: #474747;
+            color: white ;
+            font-family: Roboto;
+            text-align: center;
+        }
+
+        .cmd {
+            background-color: black;
+            
+            border-radius: 15px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .cmd p {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: greenyellow;
+
+        }
+
+        .json {
+
+            border-radius: 20px;
+            background-color: red;
+            box-shadow: #ffffff;
+            padding: 10px;
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .json:hover {
+
+            background-color: rgb(0, 196, 55);
+            color: white;
+            font-weight: bolder;
+        }
+
+
+        #output {
+           margin-top: 10px;
+            background-color: black;
+            color: white;
+            white-space: pre-wrap;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            convert txt to json
+        </h1>
+
+        <h3>
+            use cmd in images folder
+        </h3>
+
+        <div class="cmd"><p>
+            dir *.jpg /s /b > output.txt
+        </p>
+    </div>
+        
+    </header>
+
+    <section><label for="directory">Directory name:</label>
+    <input type="text" id="directory" name="directory" value="diario_elcarmen">
+    <br>
+    <label for="file">Select output.txt file:</label>
+    <input type="file" id="file" name="file" accept=".txt">
+    <br>
+    <button onclick="loadData()">Convert</button>
+    <div id="output"></div>
+    <button class="json"  onclick="downloadJSON()" id="download" disabled>Download JSON</button>
+   
+</section>
+    
+<script>
+    let jsonData;  // variable to store json data
+
+    function loadData() {
+        const directory = document.getElementById('directory').value;
+        const fileInput = document.getElementById('file');
+        const file = fileInput.files[0];
+
+        if(file) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                let lines = e.target.result.split('\n');
+
+                // Remove "\r" from each line and ignore empty lines
+                lines = lines.map(line => line.replace('\r', '')).filter(Boolean);
+
+                const output = lines.map(line => {
+                    const filename = line.split('\\').pop();
+                    return { src: `assets/img/${directory}/${filename}` };
+                });
+
+                jsonData = JSON.stringify(output, null, 2);  // store json data
+                document.getElementById('output').innerText = jsonData;
+                document.getElementById('download').disabled = false;  // enable download button
+            }
+
+            reader.readAsText(file);
+        }
+    }
+
+    function downloadJSON() {
+        const directory = document.getElementById('directory').value; // get the directory name
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(jsonData);
+        const downloadAnchorNode = document.createElement('a');
+        downloadAnchorNode.setAttribute("href", dataStr);
+        downloadAnchorNode.setAttribute("download", directory + ".json"); // set the download file name based on the directory name
+        document.body.appendChild(downloadAnchorNode);
+        downloadAnchorNode.click();
+        downloadAnchorNode.remove();
+    }
+</script>
+</body>
+</html>

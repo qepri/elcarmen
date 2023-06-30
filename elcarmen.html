@@ -20,8 +20,10 @@
             📸 <i>Sergio Aguirrre</i> </h3>
             <!-- <button class="r-btn" id="theme-toggle">diarios 2022</button> -->
             <button class="mid-btn" id="view-toggle" > vistas</button>
+            <button id="shuffle-button">mix</button>
             <button class="mid-btn" >Talleres</button>
             <button class="l-btn"><a href="index.html"> Agenda </a></button>
+           
     </header>
     
 
@@ -66,10 +68,16 @@
             fetchAndDisplayImages();
         
             const viewToggleButton = document.getElementById('view-toggle');
+            const shuffleButton = document.getElementById('shuffle-button');
             const imageContainer = document.getElementById('image-container');
         
             viewToggleButton.addEventListener('click', function() {
                 imageContainer.classList.toggle('masonry');
+            });
+        
+            shuffleButton.addEventListener('click', function() {
+                shuffleArray(imagesArray);
+                displayImages(imagesArray);
             });
         });
         
@@ -97,7 +105,7 @@
                 img.classList.add('popup-img');
                 imageContainer.appendChild(img);
             }
-            
+        
             let imgs = document.getElementsByClassName('popup-img');
             for (let i = 0; i < imgs.length; i++) {
                 imgs[i].addEventListener('click', function(){
@@ -151,7 +159,15 @@
             currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
             showModal(currentImageIndex);
         });
+        
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]]; // swap elements
+            }
+        }
         </script>
+        
         
     
 
