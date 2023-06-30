@@ -8,6 +8,7 @@
     --light-btn: rgb(0, 99, 0);
     --light-sct: #ff0000; 
     /* Dark theme colors */
+   
     --dark-background: #474747;
     --dark-text: #D3D3D3;
     --dark-accent: #FF0000;
@@ -26,8 +27,9 @@ header {
     text-align: center;
     width: 100%;
     position: fixed;
-    background-color: white; 
-    padding-bottom: 10px;  
+    top: 0;
+    background-color: white;
+    padding-bottom: 10px; 
 }
 
 header h3 {
@@ -69,23 +71,21 @@ button {
 
 
 .statment {
-  
-    
-    display: initial;
-    justify-content: center;
+    padding-top: 150px;
+    padding-left: 30%;
+    padding-right: 30%;
+   
+    display: flow-root;
+    text-align: center;
 }
 .statment, p {
-
-    padding-top: 60px;
-    justify-content: center;
-    font-familye: Roboto;
+    
+    font-family: Roboto Mono, monospace;
     font-weight: normal;
     color: #474747;
-    padding-left: 35%;
-    padding-right: 35% ;
-  
-
+   
 }
+
 
 
 
