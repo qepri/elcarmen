@@ -87,6 +87,7 @@
 </section>
     
 <script>
+
     let jsonData;  // variable to store json data
 
     function loadData() {
@@ -94,7 +95,7 @@
         const fileInput = document.getElementById('file');
         const file = fileInput.files[0];
 
-        if(file) {
+        if (file) {
             const reader = new FileReader();
 
             reader.onload = function(e) {
@@ -105,7 +106,8 @@
 
                 const output = lines.map(line => {
                     const filename = line.split('\\').pop();
-                    return { src: `assets/img/${directory}/${filename}` };
+                    const src = `assets/img/${directory}/${filename}`;
+                    return { src, filename };
                 });
 
                 jsonData = JSON.stringify(output, null, 2);  // store json data
@@ -127,6 +129,8 @@
         downloadAnchorNode.click();
         downloadAnchorNode.remove();
     }
+
+
 </script>
 </body>
 </html>

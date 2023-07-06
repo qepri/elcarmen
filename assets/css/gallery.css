@@ -1,130 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-:root {
-    /* Light theme colors */
-    --light-background: #FFFFFF;
-    --light-text: #474747;
-    --light-accent: #8B0000;
-    --light-btn: rgb(0, 99, 0);
-    --light-sct: #ff0000; 
-    /* Dark theme colors */
-   
-    --dark-background: #474747;
-    --dark-text: #D3D3D3;
-    --dark-accent: #FF0000;
-    --dark-btn: rgb(179, 255, 179);
-    --dark-sct: #000000; 
-}
-
 body {
-    /* default to light theme */
-    background-color: var(--light-background);
-    color: var(--light-text);
- 
+    font-family: 'Roboto Mono';
 }
-
-header {
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    padding-bottom: 10px; 
-}
-
-header h3 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-}
-
-header button a {
-    color: rgb(0, 0, 0);
-    margin-top: -15px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    text-decoration: none;
-}
-
-header button:hover {
-    background-color: #474747;
-    color: white;
-}
-
-header a:hover {
-    background-color: #47474 ;
-    color: white;
-    text-decoration: none;
-}
-
-
-button {
-   
-    background-color : rgb(255, 255, 255) ;
-    font-size: 16px;
-    letter-spacing: 5px;
-    border-style: solid;
-    border-color: gray;
-    border-width: 1px;
-}
-
-
-
-
-.statment {
-    padding-top: 100px;
-    padding-left: 15vw;
-    padding-right: 15vw;
-   
-    display: flow-root;
-    text-align: center;
-}
-.statment, p {
-    
-    font-family: Roboto Mono, monospace;
-    font-weight: normal;
-    color: #474747;
-   
-}
-
-
-
-
-body.dark-theme {
-    background-color: var(--dark-background);
-    color: var(--dark-text);
-}
-
-body.dark-theme h1, body.dark-theme h2 {
-    color: var(--dark-text);
-}
-
-body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
-    color: var(--dark-accent);
-}
-
-
-
-
-body.dark-theme button {
-    background-color: var(--dark-btn);
-    color: var(--light-text);
-}
-/* 
-.r-btn {
-    border-radius:30px 0px 0px 30px;
-    padding: 0px 20px 0 20px;
-}
-
-.mid-btn {
-    border-radius: 0px 0px 0px 0px;
-    padding: 0px 10px 0px 10px;
-}
-
-.l-btn {
-    border-radius: 0px 30px 30px 0px;
-    padding: 0px 15px 0px 20px;
-} */
-
 
 .fotos_main {
     display: flex;
@@ -146,19 +24,26 @@ body.dark-theme button {
 }
 
 .masonry {
-    /* Break columns at every size */
-    column-count: 5;
+    column-count: 3;
     column-gap: .5em;
 }
 
 .masonry img {
-    /* Make sure items break across columns */
     break-inside: avoid;
-    /* Margin bottom to mimic the gap on top caused by column-gap */
-    margin-bottom: 1em;
-    /* Full width to span multiple columns */
     width: 100%;
 }
+
+@media (max-width: 768px) {
+   .masonry {
+      column-count: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .contrataciones {
+       display: none;
+     }
+ }
 
 
 

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<style>
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        background-color: black;
+        color: white;
+        letter-spacing: 1vw;
+    }
+
+    header h2 {
+        display: flex;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    header span {
+        font-size: 3vh;
+   
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    header button {
+        background-color: rgb(17, 173, 17);
+        color: white;
+        border-radius: 20px;
+        margin: 1vw 0 1vw 0;
+
+    }
+
+    header i {
+        text-align: center;
+        background-color: #474747;
+        color: white;
+        border-radius: 100px;
+        padding: 10px;
+        margin: 5px;
+        font-size: 3vh;
+    }
+
+    header i:hover {
+        background-color: #b6b6b6;
+        color: rgb(55, 55, 55);
+       
+
+    }
+
+   a {
+    color: white;
+    text-decoration: none;
+   }
+
+
+    .instrucciones {
+        margin-top: 10vh;
+    display: grid;
+    align-items: center;
+    padding: 0 20vw 0 20vw;
+    text-align: center;
+    }
+
+    .instrucciones p {
+        margin: 1vh 0 1vh 0;
+        text-align: justify;
+    }
+
+    .instrucciones h1 {
+        letter-spacing: 2vw;
+        text-transform: uppercase;
+    }
+
+    .instrucciones h2 {
+    font-size: 3vh;    
+    }
+    
+    .instrucciones .call {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        padding: 3px;
+    }
+
+    .instrucciones a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .instrucciones a:hover {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    .instrucciones button {
+        background-color: black;
+        color: white;
+        border-style: none;
+    }
+
+    .instrucciones button:hover  {
+        transform: scale(1.2);
+        background-color: rgb(23, 208, 6);
+  color: rgb(255, 255, 255);
+    }
+
+    footer {
+        background-color: black;
+        color:white ;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+
+
+  
+
+</style>
+
+
+    
+
+    <header>
+
+      <h2>📸 Sergio Aguirrre</h2>  
+
+      <button>
+        <a href="index.html">
+        <span class="contrataciones">Contrataciones</span>
+        </a>
+      </button>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/Sergio.Aguirrre"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/Sergio.Aguirrre/"><i class="fab fa-instagram"></i></a>        
+      </div>
+
+    </header>
+
+    <section class="fecha">
+        
+    </section>
+
+    <section class="instrucciones">
+
+        <h2
+        style=" text-align: left;"
+        >Graduación 6 de Julio, 2023 El Carmen NL</h2>
+      
+        <h4
+        style=" text-align: left;"
+        >📸 Sergio Aguirrre</h4>
+      
+
+        <h1>
+            🎓 ¡Felicidades! 🎉
+        </h1>
+
+        <p>Haz concluido un paso importante en tu formación, continua cosechando conocimiento y con el tiempo irás viendo
+            resultados en tu desarrollo como persona y profesional.
+        </p>
+        
+        <p>
+            Te comparto la selección de fotografías de tu Ceremonia de Graduación, todas las imagenes están en venta.
+        </p>
+
+        <p>
+          <i>  De manera digital, en alta resolución. Lista para imprimir en el tamaño que usted desee mejor. </i>
+        </p>
+
+        <p>Aceptamos <u>unicamente <b>transferencias bancarias y/o efectivo</b></u>, comunicate conmigo por aquí para adquirir tu fotografía</p>
+
+   
+        <button class="call">
+        <a href="https://wa.me/8119243339?text=¡Hola!%20Me%20gustar%C3%ADa%20comprar%20una%20foto%20de%20la%20graduación%206%20de%20Julio"
+        target="_blank">
+        <h2>Adquiere tu memoria por tan solo:</h2>
+        <h2>$50 pesos mexicanos</h2>
+        </a>
+        </button>
+        
+        
+    </section>
+    
+    <section id="galeria">
+        <div class="fotos_main">
+            <div id="image-container" class="fotos masonry"></div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+         
+<button id="prevButton" class="modal-navigation"><i class="fas fa-arrow-left"></i></button>
+<button id="nextButton" class="modal-navigation"><i class="fas fa-arrow-right"></i></button>
+
+           
+
+        </div>
+    </section>
+
+
+    <footer>
+    <h2>Sergio Aguirrre © 2023</h2>  
+    <span> Todos los derechos reservados </span>  
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetchAndDisplayImages();
+        
+            const viewToggleButton = document.getElementById('view-toggle');
+            const shuffleButton = document.getElementById('shuffle-button');
+            const imageContainer = document.getElementById('image-container');
+        
+            viewToggleButton.addEventListener('click', function() {
+                imageContainer.classList.toggle('masonry');
+            });
+        
+            shuffleButton.addEventListener('click', function() {
+                shuffleArray(imagesArray);
+                displayImages(imagesArray);
+            });
+        });
+        
+        let imagesArray; // Hold the array of images
+        let currentImageIndex = 0; // Keep track of the current image
+        
+        function fetchAndDisplayImages() {
+            fetch('graduacion_6julio.json')
+                .then(response => response.json())
+                .then(images => {
+                    imagesArray = images; // Store the images array
+                    displayImages(images);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+        
+        function displayImages(images) {
+            const imageContainer = document.getElementById('image-container');
+            imageContainer.innerHTML = '';
+        
+            for (let i = 0; i < images.length; i++) {
+                let img = document.createElement('img');
+                img.src = images[i].src;
+                img.alt = images[i].caption; // Use the caption as the alt attribute
+                img.classList.add('popup-img');
+                imageContainer.appendChild(img);
+            }
+        
+            let imgs = document.getElementsByClassName('popup-img');
+            for (let i = 0; i < imgs.length; i++) {
+                imgs[i].addEventListener('click', function(){
+                    showModal(i); // Pass the index to the showModal function
+                });
+            }
+        
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() { 
+                document.getElementById('myModal').style.display = "none";
+            }
+        }
+        
+        // Show modal and set current image index
+        function showModal(index) {
+            currentImageIndex = index;
+        
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+        
+            modal.style.display = "block";
+            modalImg.src = imagesArray[index].src;
+            captionText.innerHTML = imagesArray[index].caption; // Use the caption
+        }
+        
+        // Handle arrow key navigation
+        document.addEventListener('keydown', function(event) {
+            var modal = document.getElementById('myModal');
+        
+            if(modal.style.display === "block") { // only if modal is open
+                if(event.key === "ArrowRight") {
+                    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+                    showModal(currentImageIndex);
+                } else if(event.key === "ArrowLeft") {
+                    currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+                    showModal(currentImageIndex);
+                }
+            }
+        });
+        
+        // Add click event listeners to your buttons
+        document.getElementById('prevButton').addEventListener('click', function() {
+            // move to the previous image
+            currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+            showModal(currentImageIndex);
+        });
+        
+        document.getElementById('nextButton').addEventListener('click', function() {
+            // move to the next image
+            currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+            showModal(currentImageIndex);
+        });
+        
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]]; // swap elements
+               
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
