@@ -47,17 +47,15 @@
    .masonry {
       column-count: 1;
     }
-      .contrataciones {
+    
+    .contrataciones {
        display: none;
-     }
+    }
 
-     .instrucciones {
-  padding: 30px;
+    .instrucciones {
+     padding: 30px;
+    }
 }
-
-
-
-
 
 /* The Modal (background) */
 .modal {
