@@ -28,18 +28,31 @@
     break-inside: avoid;
     width: 100%;
 }
+@media (max-width: 1025px) {
+   .masonry {
+      column-count: 2;
+    }
+
+    .fotos_main {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+  
+ }
 
 @media (max-width: 768px) {
    .masonry {
       column-count: 1;
     }
-}
-
-@media (max-width: 768px) {
-    .contrataciones {
+      .contrataciones {
        display: none;
      }
- }
+}
+
+
 
 
 

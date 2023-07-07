@@ -24,9 +24,11 @@
         margin: 0 auto;
      }
 
-    body {
+    body span  {
     font-family: 'Roboto Mono', monospace;
     }
+
+    
 
     header {
         display: flex;
@@ -47,22 +49,33 @@
         font-weight: bold;
         font-style: italic;
         letter-spacing: .5vw;
+        
     }
 
     header span {
         font-size: 3vh;
-        font-family: 'Roboto Mono', monospace;
-        font-style: italic;
-        letter-spacing: 1vw;
     }
+
+   
+
+
 
     header button {
         background-color: rgb(17, 173, 17);
         color: white;
-        border-radius: 10px;
+        border-radius: 5px;
+        padding: 10px;
         margin: 1vw 0 1vw 0;
 
     }
+
+    header  button:hover   {
+        background-color: rgb(0, 99, 41);
+        color:rgb(31, 73, 38);
+    }
+
+
+  
 
     header i {
         text-align: center;
@@ -71,14 +84,22 @@
         border-radius: 100px;
         padding: 10px;
         margin: 5px;
-        font-size: 3vh;
+        font-size: 4vh;
+     
     }
+    
 
     header i:hover {
         background-color: #b6b6b6;
         color: rgb(55, 55, 55);
        
 
+    }
+
+    header .socials {
+
+        display: flex;
+        align-items: center;
     }
 
    a {
@@ -88,12 +109,12 @@
 
 
     .instrucciones {
-        margin-top: 10vh;
-    display: flex;
+    margin-top: 10vh;
+    display: grid;
     align-items: center;
     padding: 0 20vw 0 20vw;
     text-align: center;
-    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
     }
 
     .instrucciones p {
@@ -114,7 +135,9 @@
         border-radius: 10px;
         background-color: black;
         color: white;
+        width: 100%;
         padding: 3px;
+        margin-top: 4vh;
     }
 
     .instrucciones a {
@@ -130,7 +153,7 @@
         background-color: black;
         color: white;
         border-style: none;
-      margin: 20px 0 20px 0;
+      padding: 20px 0 20px 0;
     }
 
     .instrucciones button:hover  {
@@ -144,9 +167,17 @@
         color:white ;
         width: 100%;
         text-align: center;
+        font-style: italic;
+        font-weight: bold;
         padding: 10px 0 10px 0;
     }
 
+    footer span {
+        font-family: 'Roboto Mono', monospace;
+        font-style: normal;
+    }
+
+    
 
   
 
@@ -161,7 +192,7 @@
 
       <button>
         <a href="index.html">
-        <span class="contrataciones"> contrataciones </span>
+       <span>🗓️</span> <span class="contrataciones">Agenda </span>
         </a>
       </button>
 
@@ -179,26 +210,28 @@
     <section class="instrucciones">
 
         <h2
-        style=" text-align: left;margin-bottom: 10px; margin-top: 20px;"
+        style=" text-align: left;margin-bottom: 9vh; margin-top: 20px;"
         ><u>Graduación 6 de Julio, 2023 El Carmen NL</u></h2>
       
      
       
 
         <h1>
-            🎓 ¡Felicidades! 🎉
+        🎓 ¡Felicidades! 
         </h1>
 
-        <p>Haz concluido un paso importante en tu formación, continua cosechando conocimiento y con el tiempo irás viendo
+        <p>🎉 Haz concluido un paso importante en tu formación.
+        </p>
+        <p> Continúa cosechando conocimiento y con el tiempo irás viendo
             resultados en tu desarrollo como persona y profesional.
         </p>
         
         <p>
-            Te comparto la selección de fotografías de tu Ceremonia de Graduación, todas las imagenes están en venta.
+            Te comparto la selección de fotografías de tu Ceremonia de Graduación, todas los recuerdos están en venta.
         </p>
 
         <p>
-          <i>  De manera digital, en alta resolución. Lista para imprimir en el tamaño que usted desee mejor. </i>
+          <i>De manera digital, en alta resolución. Lista para imprimir en el tamaño que usted desee mejor.</i>
         </p>
 
         <p>Aceptamos <u>unicamente <b>transferencias bancarias y/o efectivo</b></u>, comunicate conmigo por aquí para adquirir tu fotografía</p>
@@ -207,7 +240,7 @@
         <button class="call">
         <a href="https://wa.me/8119243339?text=¡Hola!%20Me%20gustar%C3%ADa%20comprar%20una%20foto%20de%20la%20graduación%206%20de%20Julio"
         target="_blank">
-        <h2>Adquiere tu fotografía por tan solo:</h2>
+        <h2>Adquiere tu fotografía por</h2>
         <h2>$50 pesos mexicanos</h2>
         </a>
         </button>
