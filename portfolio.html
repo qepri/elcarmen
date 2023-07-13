@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/gif" sizes="256x256" href="logo.png">
     <link rel="icon" type="image/gif" sizes="256x256" href="logo.png">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portafolio - Sergio Aguirrre</title>
 </head>
 <body>
@@ -21,24 +22,82 @@
             background-color: white;
         }
 
+
+        .masonry {
+    /* Break columns at every size */
+    column-count: 3;
+    column-gap: .5em;
+}
+
+@media (max-width: 1023px) {
+   .masonry {
+      column-count: 2;
+    }
+
+    .fotos_main {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+  
+ }
+
+@media (max-width: 668px) {
+   .masonry {
+      column-count: 1;
+    }
+    
+    .contrataciones {
+       display: none;
+    }
+
+    .instrucciones {
+     padding: 30px;
+    }
+}
+
+.container_buttons {
+    position: fixed !important;
+}
        
     </style>
     
     <header>
-        <h1  >Portafolio</h1>
-        <h2 style="margin-top: -5px; margin-bottom: 10px; letter-spacing: 3px;">
-            📸 <i>Sergio Aguirrre</i> </h2>
-            <!-- <button class="r-btn" id="theme-toggle">diarios 2022</button> -->
-            <button  id="view-toggle" >Mediación</button>
-            <button  >Retrato</button>
-            <button ><a href="index.html">Conciertos</a></button>
-            <button id="shuffle-button">Proyectos Personales</button>
+        <h2>
+            📸  Sergio Aguirrre
+        </h2>
+      
+           </header>
 
-            <!-- <button> <a href="https://kwalhia.com/Entrevistas">Podcast</a></button> -->
-           
-    </header>
+    <div class="container_buttons">
+        <button  id="view-toggle" >Mediación</button>
+        <button  >Retrato</button>
+        <button ><a href="index.html">Conciertos</a></button>
+        <button id="shuffle-button">Proyectos</button>
+
+        <!-- <button> <a href="https://kwalhia.com/Entrevistas">Podcast</a></button> -->      
+    </div>
+
+    <div class="nav_mobile">
+        <button onclick="toggleDropdown()" class="dropdown-btn">menú</button>
+        <div id="dropdown" class="dropdown-content">
+            <a id="view-toggle" >Mediación</a>
+            <a >Retrato</a>
+           <a href="index.html">Conciertos</a>
+            <a id="shuffle-a">Proyectos Personales</a>
+      </div>
+      </div>
+      <script>
+     
+        function toggleDropdown() {
+     const dropdownContent = document.getElementById("dropdown");
+     dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";}
+   
+   </script>
     
-    <div class="statment">
+    <!-- <div class="statment">
         
         <h4> Reflejos de algunas buenas vistas.
         </h4> 
@@ -48,7 +107,7 @@
             Breve documentación de mis experiencias; <br> <b> la creación no es en un sólo lugar.</b> 
         </p>
       
-    </div>
+    </div> -->
 
 
     
@@ -91,11 +150,12 @@
         let currentImageIndex = 0; // Keep track of the current image
         
         function fetchAndDisplayImages() {
-            fetch('diario_carmen.json')
+            fetch('assets/img/fotopro/fotopro.json')
                 .then(response => response.json())
                 .then(images => {
-                    imagesArray = images; // Store the images array
-                    displayImages(images);
+            imagesArray = images; // Store the images array
+            shuffleArray(imagesArray); // Randomize the order of images
+            displayImages(imagesArray);
                 })
                 .catch(error => console.error('Error:', error));
         }
@@ -175,13 +235,11 @@
         </script>
         
         
-    
+    	<a href="https://wa.me/8119243339?text=Hola!%20Me%20gustaría%20saber%20¿qué%20fechas%20tienen%20disponibles?" class="whatsapp" target="_blank"> 
+            <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
        <footer>
-        <h5 style="font-family: Roboto; color: black; font-weight: normal; text-align: center;
-        font-size: 20px;">
-            Sergio Aguirrre © 2023 
-        </h5>
+
     </footer>
 </body>
 </html>
