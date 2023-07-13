@@ -41,11 +41,17 @@ height: 95vh;
     z-index:100;
   }
   
-  .whatsapp-icon {
+  .whatsapp i {
     margin:13px;
     background-color:#25d366;
     padding: 2vh;
     border-radius: 100px;
+  }
+
+  .whatsapp i:hover {
+    background-color:#07a13f;
+    color:#adffcb;
+   
   }
 
   header {
