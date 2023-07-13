@@ -11,40 +11,28 @@
 </head>
 <body>
 
-    <header>
-        <h2>
-            📸  Sergio Aguirrre
-        </h2>
-    </header>
-
   <!-- <div class="sobremi">
     <img src="assets/img/diario_elcarmen/IMG_20220829_185908_1-19.jpg" alt="" 
     style="max-width: 512px; max-height: 15vh; object-fit: contain;">
     <h4>Sobre mi</h4>
   
   </div> -->
-
-  <section
+   
+  <div class="paquete_foto"
   style="
-display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;"
-  >
-  <div class="paquete_foto">
+  padding: 5px;
+  margin-left:20px ;
+  background-color: #ffffff42;">
     
   <h1>Retrato Fotográfico</h1>
   <h2>Momentos inolvidables</h2>
   <p>Fotografías Profesionales</p>
   <p>Entrega Digital</p>
-
   <div
   style="display:block">
   
   <p class="precio"> <a 
-    href="https://wa.me/8119243339?text=Hola!%20Me%20gustaría%20saber%20¿qué%20fechas%20tienen%20disponibles?" target="_blank">
+    href="https://wa.me/8119243339?text=Hola!%20Me%20gustaría%20saber%20¿qué%20fechas%20tienen%20disponibles?">
     Paquetes Verano 2023</a></p>
   </div>
   </div>
@@ -52,15 +40,12 @@ display: flex;
     <div class="content flyer">
       <section>
      
-       
-          <div class="buttones">
+    <div class="buttones">
       <button onclick="updateContent('individual')">RETRATO</button>
       <button onclick="updateContent('xv')">XV AÑOS</button>
       <button onclick="updateContent('boda')">BODA</button>
       <button onclick="updateContent('evento')">EVENTO</button>
- 
-  </div>
-    
+    </div>
 
     <div class="nav_mobile">
       <button onclick="toggleDropdown()" class="dropdown-btn">Sesiones Fotográficas</button>
@@ -73,7 +58,7 @@ display: flex;
     </div>
     
 
-<div>
+<div class="fixed-size-div">
     <div id="image-slider" class=" img_cover">
       <img id="slider-image" src="" alt="Image">
    
@@ -91,25 +76,35 @@ display: flex;
     style="
     position: relative;
     padding: 5px;
-    background-color: #ffffff00;
-    padding-bottom: 90px;">
+    background-color: #ffffff00;">
       
     <h1>Retrato Fotográfico</h1>
     
-    <h2>Momentos Inolvidables</h2>
-    <p> Paquetes Verano 2023</p>
-    <p>Entrega Digital</p>
+    <h2></h2>
+    <p></p>
+    <p></p>
     <div
     style="
-    display:block"> <p class="precio"> <a 
-    href="https://wa.me/8119243339?text=Hola!%20Me%20gustaría%20saber%20¿qué%20fechas%20tienen%20disponibles?" target="_blank">
-    Paquetes Verano 2023</a></p></div>
+    display:block"> <p class="precio"> <a href="">Promo: $750 MXN</a></p></div>
     </div>
-</section>
+  </section>
    
-
-   
+  <footer> 
+    <div>
+      <h4>AGENDA TU SESIÓN</h4>
+    </div>
+    
   
+    <p class="notes" >Nuevo León Mex</p>
+  <a href="sobremi.html"> 
+    <h4
+   style=" 
+   color:rgb(45, 45, 45);   font-weight: 100;"
+   >Sergio Aguirrre 2023</h4></a>
+  </div>
+
+</footer>
+
 <script src="assets/js/paquetes_botones.js"></script>       
  
     
@@ -122,11 +117,5 @@ display: flex;
   dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";}
 
 </script>
-
-<footer> 
-   
-
-</footer>
-
 </body>
 </html>
