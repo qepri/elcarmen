@@ -1,5 +1,401 @@
 [
   {
+    "src": "assets/img/fotopro/bodas/FranciscoYazmin/BodaFranciscoYazmin-IMG_119513-1.jpg",
+    "category": "bodas",
+    "subcategory": "FranciscoYazmin",
+    "filename": "BodaFranciscoYazmin-IMG_119513-1.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/bodas/FranciscoYazmin/BodaFranciscoYazmin-IMG_3223104.jpg",
+    "category": "bodas",
+    "subcategory": "FranciscoYazmin",
+    "filename": "BodaFranciscoYazmin-IMG_3223104.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/bodas/FranciscoYazmin/BodaFranciscoYazmin-IMG_3363166-3.jpg",
+    "category": "bodas",
+    "subcategory": "FranciscoYazmin",
+    "filename": "BodaFranciscoYazmin-IMG_3363166-3.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/bodas/FranciscoYazmin/BodaFranciscoYazmin-IMG_3479219-4.jpg",
+    "category": "bodas",
+    "subcategory": "FranciscoYazmin",
+    "filename": "BodaFranciscoYazmin-IMG_3479219-4.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/bodas/FranciscoYazmin/BodaFranciscoYazmin-IMG_3491226-5.jpg",
+    "category": "bodas",
+    "subcategory": "FranciscoYazmin",
+    "filename": "BodaFranciscoYazmin-IMG_3491226-5.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/BaronScarpia/BARONSCARPIA-4906.jpg",
+    "category": "conciertos",
+    "subcategory": "BaronScarpia",
+    "filename": "BARONSCARPIA-4906.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/BaronScarpia/BARONSCARPIA-5026.jpg",
+    "category": "conciertos",
+    "subcategory": "BaronScarpia",
+    "filename": "BARONSCARPIA-5026.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/BaronScarpia/BARONSCARPIA-5299.jpg",
+    "category": "conciertos",
+    "subcategory": "BaronScarpia",
+    "filename": "BARONSCARPIA-5299.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/BaronScarpia/BARONSCARPIA-5421.jpg",
+    "category": "conciertos",
+    "subcategory": "BaronScarpia",
+    "filename": "BARONSCARPIA-5421.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/ElRealAgasajo/REALPATIO-3436.jpg",
+    "category": "conciertos",
+    "subcategory": "ElRealAgasajo",
+    "filename": "REALPATIO-3436.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/ElRealAgasajo/REALPATIO-3534.jpg",
+    "category": "conciertos",
+    "subcategory": "ElRealAgasajo",
+    "filename": "REALPATIO-3534.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/FuriaMusical/FURIAMUSICAL-00136.jpg",
+    "category": "conciertos",
+    "subcategory": "FuriaMusical",
+    "filename": "FURIAMUSICAL-00136.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/FuriaMusical/FURIAMUSICAL-09485.jpg",
+    "category": "conciertos",
+    "subcategory": "FuriaMusical",
+    "filename": "FURIAMUSICAL-09485.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/FuriaMusical/FURIAMUSICAL-09781.jpg",
+    "category": "conciertos",
+    "subcategory": "FuriaMusical",
+    "filename": "FURIAMUSICAL-09781.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/FuriaMusical/FURIAMUSICAL-09802.jpg",
+    "category": "conciertos",
+    "subcategory": "FuriaMusical",
+    "filename": "FURIAMUSICAL-09802.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/NosotrosLosOlvidados/NOSOTROSLOSOLVIDADOS-AUDIORAMA-SERGIOAGUIRRE-14.jpg",
+    "category": "conciertos",
+    "subcategory": "NosotrosLosOlvidados",
+    "filename": "NOSOTROSLOSOLVIDADOS-AUDIORAMA-SERGIOAGUIRRE-14.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/NosotrosLosOlvidados/NOSOTROSLOSOLVIDADOS-AUDIORAMA-SERGIOAGUIRRE-2.jpg",
+    "category": "conciertos",
+    "subcategory": "NosotrosLosOlvidados",
+    "filename": "NOSOTROSLOSOLVIDADOS-AUDIORAMA-SERGIOAGUIRRE-2.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/NosotrosLosOlvidados/NOSOTROSLOSOLVIDADOS-AUDIORAMA-SERGIOAGUIRRE-4.jpg",
+    "category": "conciertos",
+    "subcategory": "NosotrosLosOlvidados",
+    "filename": "NOSOTROSLOSOLVIDADOS-AUDIORAMA-SERGIOAGUIRRE-4.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/Trakalosa/TRAKALOSA--2.jpg",
+    "category": "conciertos",
+    "subcategory": "Trakalosa",
+    "filename": "TRAKALOSA--2.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/Trakalosa/TRAKALOSA--3.jpg",
+    "category": "conciertos",
+    "subcategory": "Trakalosa",
+    "filename": "TRAKALOSA--3.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/Trakalosa/TRAKALOSA-.jpg",
+    "category": "conciertos",
+    "subcategory": "Trakalosa",
+    "filename": "TRAKALOSA-.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/Trakalosa/TRAKALOSA-000735.jpg",
+    "category": "conciertos",
+    "subcategory": "Trakalosa",
+    "filename": "TRAKALOSA-000735.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/Trakalosa/TRAKALOSA-001425.jpg",
+    "category": "conciertos",
+    "subcategory": "Trakalosa",
+    "filename": "TRAKALOSA-001425.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/Trakalosa/TRAKALOSA-014948.jpg",
+    "category": "conciertos",
+    "subcategory": "Trakalosa",
+    "filename": "TRAKALOSA-014948.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/Trakalosa/TRAKALOSA-020610.jpg",
+    "category": "conciertos",
+    "subcategory": "Trakalosa",
+    "filename": "TRAKALOSA-020610.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/conciertos/Trakalosa/TRAKALOSA-030836.jpg",
+    "category": "conciertos",
+    "subcategory": "Trakalosa",
+    "filename": "TRAKALOSA-030836.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_0664-20.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_0664-20.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_1169-21.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_1169-21.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_1839-22.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_1839-22.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_1851-23.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_1851-23.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_1860-24.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_1860-24.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_2042-25.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_2042-25.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_2658-26.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_2658-26.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_2666-27.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_2666-27.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_2669-28.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_2669-28.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_3976-1.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_3976-1.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_4334-2.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_4334-2.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_4495-3.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_4495-3.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_4529-4.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_4529-4.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_4562-5.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_4562-5.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_4791-6.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_4791-6.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_5234-7.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_5234-7.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_6463-9.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_6463-9.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_6853-10.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_6853-10.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_6872-12.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_6872-12.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_6880-13.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_6880-13.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_6921-14.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_6921-14.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_6976-15.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_6976-15.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_6999-16.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_6999-16.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_9600-17.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_9600-17.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/esfera/IMG_9833-18.jpg",
+    "category": "mediacion",
+    "subcategory": "esfera",
+    "filename": "IMG_9833-18.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_1299.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_1299.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_1550.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_1550.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_1756.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_1756.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_1900.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_1900.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_1905.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_1905.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_2251.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_2251.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_2256.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_2256.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_2984.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_2984.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/producto/monterosa/IMG_0012.jpg",
+    "category": "producto",
+    "subcategory": "monterosa",
+    "filename": "IMG_0012.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/producto/monterosa/IMG_0049.jpg",
+    "category": "producto",
+    "subcategory": "monterosa",
+    "filename": "IMG_0049.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/producto/monterosa/IMG_0167.jpg",
+    "category": "producto",
+    "subcategory": "monterosa",
+    "filename": "IMG_0167.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/producto/monterosa/IMG_0180.jpg",
+    "category": "producto",
+    "subcategory": "monterosa",
+    "filename": "IMG_0180.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/producto/monterosa/IMG_0242.jpg",
+    "category": "producto",
+    "subcategory": "monterosa",
+    "filename": "IMG_0242.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/producto/monterosa/IMG_0250.jpg",
+    "category": "producto",
+    "subcategory": "monterosa",
+    "filename": "IMG_0250.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/producto/monterosa/IMG_9955-Editar.jpg",
+    "category": "producto",
+    "subcategory": "monterosa",
+    "filename": "IMG_9955-Editar.jpg"
+  },
+  {
     "src": "assets/img/fotopro/retrato/andres/IMG_1642.jpg",
     "category": "retrato",
     "subcategory": "andres",
@@ -46,6 +442,36 @@
     "category": "retrato",
     "subcategory": "andres",
     "filename": "IMG_1837.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/brenda/IMG_9343.jpg",
+    "category": "retrato",
+    "subcategory": "brenda",
+    "filename": "IMG_9343.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/brenda/IMG_9351.jpg",
+    "category": "retrato",
+    "subcategory": "brenda",
+    "filename": "IMG_9351.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/brenda/IMG_9374.jpg",
+    "category": "retrato",
+    "subcategory": "brenda",
+    "filename": "IMG_9374.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/brenda/IMG_9397.jpg",
+    "category": "retrato",
+    "subcategory": "brenda",
+    "filename": "IMG_9397.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/brenda/IMG_9408.jpg",
+    "category": "retrato",
+    "subcategory": "brenda",
+    "filename": "IMG_9408.jpg"
   },
   {
     "src": "assets/img/fotopro/retrato/carlos/IMG_2642.jpg",
@@ -108,6 +534,12 @@
     "filename": "IMG_6018.jpg"
   },
   {
+    "src": "assets/img/fotopro/retrato/edwin/edwin_luna.jpg",
+    "category": "retrato",
+    "subcategory": "edwin",
+    "filename": "edwin_luna.jpg"
+  },
+  {
     "src": "assets/img/fotopro/retrato/era/IMG_1671.jpg",
     "category": "retrato",
     "subcategory": "era",
@@ -160,6 +592,36 @@
     "category": "retrato",
     "subcategory": "era",
     "filename": "IMG_2546.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/eva/EVA2-5.jpg",
+    "category": "retrato",
+    "subcategory": "eva",
+    "filename": "EVA2-5.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/eva/EVA_01-1.jpg",
+    "category": "retrato",
+    "subcategory": "eva",
+    "filename": "EVA_01-1.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/eva/EVA_EEPE-4-2.jpg",
+    "category": "retrato",
+    "subcategory": "eva",
+    "filename": "EVA_EEPE-4-2.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/eva/eva_mascolores-2-4.jpg",
+    "category": "retrato",
+    "subcategory": "eva",
+    "filename": "eva_mascolores-2-4.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/eva/eva_mascolores-3.jpg",
+    "category": "retrato",
+    "subcategory": "eva",
+    "filename": "eva_mascolores-3.jpg"
   },
   {
     "src": "assets/img/fotopro/retrato/familia/IMG_7244.jpg",
@@ -264,6 +726,30 @@
     "filename": "KarlaC2018-4228.jpg"
   },
   {
+    "src": "assets/img/fotopro/retrato/mika_y_suri/IMG_9773.jpg",
+    "category": "retrato",
+    "subcategory": "mika_y_suri",
+    "filename": "IMG_9773.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/mika_y_suri/IMG_9790.jpg",
+    "category": "retrato",
+    "subcategory": "mika_y_suri",
+    "filename": "IMG_9790.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/mika_y_suri/IMG_9817.jpg",
+    "category": "retrato",
+    "subcategory": "mika_y_suri",
+    "filename": "IMG_9817.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/retrato/mika_y_suri/IMG_9904.jpg",
+    "category": "retrato",
+    "subcategory": "mika_y_suri",
+    "filename": "IMG_9904.jpg"
+  },
+  {
     "src": "assets/img/fotopro/retrato/xtian/IMG_1763.jpg",
     "category": "retrato",
     "subcategory": "xtian",
@@ -300,57 +786,57 @@
     "filename": "IMG_2279.jpg"
   },
   {
-    "src": "assets/img/fotopro/xv/IMG_7217.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
-    "filename": "IMG_7217.jpg"
-  },
-  {
-    "src": "assets/img/fotopro/xv/IMG_7236.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
-    "filename": "IMG_7236.jpg"
-  },
-  {
-    "src": "assets/img/fotopro/xv/IMG_7314.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
-    "filename": "IMG_7314.jpg"
-  },
-  {
-    "src": "assets/img/fotopro/xv/IMG_7349.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
-    "filename": "IMG_7349.jpg"
-  },
-  {
-    "src": "assets/img/fotopro/xv/IMG_7396.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
-    "filename": "IMG_7396.jpg"
-  },
-  {
-    "src": "assets/img/fotopro/xv/XVARIADNE-10.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
+    "src": "assets/img/fotopro/xv/ariadne/XVARIADNE-10.jpg",
+    "category": "xv",
+    "subcategory": "ariadne",
     "filename": "XVARIADNE-10.jpg"
   },
   {
-    "src": "assets/img/fotopro/xv/XVARIADNE-18.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
+    "src": "assets/img/fotopro/xv/ariadne/XVARIADNE-18.jpg",
+    "category": "xv",
+    "subcategory": "ariadne",
     "filename": "XVARIADNE-18.jpg"
   },
   {
-    "src": "assets/img/fotopro/xv/XVARIADNE-48.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
+    "src": "assets/img/fotopro/xv/ariadne/XVARIADNE-48.jpg",
+    "category": "xv",
+    "subcategory": "ariadne",
     "filename": "XVARIADNE-48.jpg"
   },
   {
-    "src": "assets/img/fotopro/xv/XVARIADNE-8.jpg",
-    "category": "fotopro",
-    "subcategory": "xv",
+    "src": "assets/img/fotopro/xv/ariadne/XVARIADNE-8.jpg",
+    "category": "xv",
+    "subcategory": "ariadne",
     "filename": "XVARIADNE-8.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/ximena/IMG_7217.jpg",
+    "category": "xv",
+    "subcategory": "ximena",
+    "filename": "IMG_7217.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/ximena/IMG_7236.jpg",
+    "category": "xv",
+    "subcategory": "ximena",
+    "filename": "IMG_7236.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/ximena/IMG_7314.jpg",
+    "category": "xv",
+    "subcategory": "ximena",
+    "filename": "IMG_7314.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/ximena/IMG_7349.jpg",
+    "category": "xv",
+    "subcategory": "ximena",
+    "filename": "IMG_7349.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/ximena/IMG_7396.jpg",
+    "category": "xv",
+    "subcategory": "ximena",
+    "filename": "IMG_7396.jpg"
   }
 ]

@@ -136,5 +136,26 @@
 
 
 </script>
+
+
+<section>
+    <h2> print files to .txt</h2>
+    
+    <div class="cmd">  <p> dir /b /s /a-d *.jpg *.png > files.txt
+
+    </div>
+
+    <h2>resize longest size to 768px</h2>
+
+    <div class="cmd">  <p>
+        for /r %F in (*.jpg, *.png) do (
+  magick "%F" -resize "768x768>" "%F"
+)
+
+    </p>
+    </div>
+       
+    
+</section>
 </body>
 </html>
