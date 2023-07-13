@@ -106,8 +106,12 @@
 
                 const output = lines.map(line => {
                     const filename = line.split('\\').pop();
-                    const src = `assets/img/${directory}/${filename}`;
-                    return { src, filename };
+                    const parts = line.split('\\');
+                    const category = parts[parts.length - 3];
+                    const subcategory = parts[parts.length - 2];
+
+                    const src = `assets/img/${directory}/${category}/${subcategory}/${filename}`;
+                    return { src, category, subcategory, filename };
                 });
 
                 jsonData = JSON.stringify(output, null, 2);  // store json data

@@ -34,7 +34,6 @@ height: 95vh;
     height:60px;
     bottom:20px;
     right:15px;
-    background-color:#25d366;
     color:#FFF;
     border-radius:50px;
     text-align:center;
@@ -43,7 +42,10 @@ height: 95vh;
   }
   
   .whatsapp-icon {
-    margin-top:13px;
+    margin:13px;
+    background-color:#25d366;
+    padding: 2vh;
+    border-radius: 100px;
   }
 
   header {
@@ -127,21 +129,23 @@ letter-spacing: 2px;
 
 }
 
-.precio, a {
+.precio a {
   color: rgb(207, 255, 222);
   text-decoration: none;
 
 
 }
 
-.precio:hover, a:hover {
-  background-color: rgb(10, 210, 10);
+.precio:hover {
+  background-color: rgb(10, 210, 10) !important;
   color: #c0ffdb;
 }
 
+
+
 .paquetes {
 color: rgb(255, 255, 255);   
-font-family: 'sSyne';
+font-family: 'Syne' , serif;
 font-weight: bold; font-style: normal;  font-size: 18px;
 }
 
@@ -154,8 +158,11 @@ font-weight: bold; font-style: normal;  font-size: 18px;
   width: 100%;
   max-height: 30px;
   padding: 1vh;
+text-transform: uppercase;
+}
 
-
+.container_buttons  button, .nav_mobile   {
+  text-transform: uppercase;
 }
 
  button {
@@ -163,7 +170,7 @@ font-weight: bold; font-style: normal;  font-size: 18px;
   color: white;
   padding: 5px;
   margin: 1px;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Syne', serif;
   font-size: 1em;
   letter-spacing: 7px;
   flex-grow: 1;
@@ -203,7 +210,19 @@ button:hover {
 .container_buttons {
     position: absolute;
     margin-bottom: 50%;
+    text-transform: uppercase;
 }
+
+.container_buttons a:hover  {
+ text-decoration: none;
+ color: #000000;
+ background-color: #ffffff00;
+}
+
+.container_buttons a {
+  
+  color: white;
+ }
 
 @media screen and (max-width: 1024px)  {
 
@@ -241,14 +260,10 @@ margin-bottom: 350px;
 
   .whatsapp {
     position:fixed;
-    width:8vh;
-   height: 8vh;
-    bottom:8vh;
-    right:15px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
+    width:auto;
+   height: 9vh;
+    bottom:9vh;
+    padding-bottom: 10px;
     font-size:40px;
     z-index:100;
   }
@@ -273,7 +288,8 @@ margin-bottom: 350px;
         left: 0;
         background-color: #1d1d1d;
         color: #ffffff;
-        font-family: 'Synes';
+        font-family: 'Synes', serif;
+        text-transform: uppercase;
         }
         
         .dropdown-content {

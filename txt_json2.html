@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert Text to JSON</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      function convertTxtToJson() {
+        const fileInput = document.getElementById('file-input');
+        const file = fileInput.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function(event) {
+          const fileContents = event.target.result;
+          const fileLines = fileContents.split('\n').filter(Boolean);
+
+          const jsonData = fileLines.map((filePath) => {
+            const filePathComponents = filePath.split('\\');
+            const category = filePathComponents[filePathComponents.length - 3];
+            const subcategory = filePathComponents[filePathComponents.length - 2];
+
+            return {
+              src: filePath,
+              category: category,
+              subcategory: subcategory,
+            };
+          });
+
+          const jsonDataString = JSON.stringify(jsonData, null, 2);
+          const jsonDataBlob = new Blob([jsonDataString], { type: 'application/json' });
+          const downloadLink = document.getElementById('download-link');
+
+          downloadLink.href = URL.createObjectURL(jsonDataBlob);
+          downloadLink.download = 'files.json';
+          downloadLink.click();
+        };
+
+        reader.readAsText(file);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="file" id="file-input" accept=".txt" />
+    <button onclick="convertTxtToJson()">Convert to JSON</button>
+    <a id="download-link" style="display: none;"></a>
+  </body>
+</html>

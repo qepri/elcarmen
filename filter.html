@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu sesión</title>
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style media="screen">
+
+        body{
+          line-height: 1.5;
+          font-family: sans-serif;
+        
+        }
+        *{
+          margin:0;
+          box-sizing: border-box;
+        }
+        .container{
+          max-width: 1170px;
+          margin:auto;
+        }
+        .row{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        img{
+          max-width: 100%;
+          vertical-align: middle;
+        }
+        /*.gallery*/
+        .gallery{
+          width: 100%;
+          display: block;
+          min-height: 100vh;
+          background-color: #000000;
+          padding: 100px 0;
+        }
+        .gallery .gallery-filter{
+          padding: 0 15px;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        .gallery .gallery-filter .filter-item{
+          color: #ffffff;
+          font-size: 17px;
+          border: 1px solid white;
+          text-transform: uppercase;
+          display: inline-block;
+          border-radius: 10px;
+          margin-right: 8px;
+          cursor: pointer;
+          padding: 8px 20px 8px 20px;
+          line-height: 1.2;
+          transition: all 0.3s ease;
+        }
+        .gallery .gallery-filter .filter-item.active{
+          color: black;
+          border-color : #8f8f8f;
+          background:white;
+        }
+        .gallery .gallery-item{
+          width: calc(100% / 3);
+          padding: 15px;
+        
+        }
+        .gallery .gallery-item-inner img{
+          width: 100%;
+          
+        }
+        .gallery .gallery-item.show{
+          animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn{
+          0%{
+            opacity: 0;
+          }
+          100%{
+            opacity: 1;
+          }
+        }
+        .gallery .gallery-item.hide{
+          display: none;
+        }
+        
+        /*responsive*/
+        @media(max-width: 491px){
+          .gallery .gallery-item{
+            width: 50%;
+          }
+        }
+        @media(max-width: 467px){
+            .gallery .gallery-item{
+            width: 100%;
+          }
+          .gallery .gallery-filter .filter-item{
+            margin-bottom: 10px;
+          }
+        }
+        
+          </style>
+           <header>
+            <h2>
+                📸  Sergio Aguirrre
+            </h2>
+        </header>
+      
+      
+      <section class="main">  <div class="image_lands">
+            <section>
+                <div class="container_buttons">
+            <button onclick="updateContent('individual')">RETRATO</button>
+            <button onclick="updateContent('xv')">XV AÑOS</button>
+            <button onclick="updateContent('boda')">BODA</button>
+            <button onclick="updateContent('evento')">EVENTO</button>
+            <button >PORTAFOLIO</button>
+          
+        </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="gallery-filter">
+            <span class="filter-item active" data-filter="all">all</span>
+            <span class="filter-item" data-filter="watch">Watch</span>
+            <span class="filter-item" data-filter="headphone">Headphone</span>
+            <span class="filter-item" data-filter="camera">Camera</span>
+            <span class="filter-item" data-filter="phone">Phone</span>
+          </div>
+        </div>
+        <div class="row" id="gallery-items"></div>
+      </div>
+    </section>
+  
+    <script src="gallery.js"></script>
+  </body>
+  
