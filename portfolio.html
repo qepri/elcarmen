@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="assets/css/landing.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="
+https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
+"></script>
     
     <title>Portafolio - Sergio Aguirrre</title>
 </head>
@@ -48,6 +51,7 @@
 @media (max-width: 668px) {
    .masonry {
       column-count: 1;
+     
     }
     
     .contrataciones {
@@ -62,6 +66,26 @@
 .container_buttons {
     position: fixed !important;
 }
+
+.fade-in {
+  animation: fade-in-animation .5s ease-in-out;
+  
+}
+
+.fade-inB {
+  animation: fade-in-animation 1.5s ease-in-out;
+  
+}
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
        
     </style>
     
@@ -72,7 +96,7 @@
       
            </header>
 
-    <div class="container_buttons">
+    <div class="container_buttons fade-inB">
         <button  id="view-toggle" >Mediación</button>
         <button  >Retrato</button>
         <button ><a href="index.html">Conciertos</a></button>
@@ -130,109 +154,123 @@
         </div>
     </section>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetchAndDisplayImages();
-        
-            const viewToggleButton = document.getElementById('view-toggle');
-            const shuffleButton = document.getElementById('shuffle-button');
-            const imageContainer = document.getElementById('image-container');
-        
-            viewToggleButton.addEventListener('click', function() {
-                imageContainer.classList.toggle('masonry');
-            });
-        
-            shuffleButton.addEventListener('click', function() {
-                shuffleArray(imagesArray);
-                displayImages(imagesArray);
-            });
-        });
-        
-        let imagesArray; // Hold the array of images
-        let currentImageIndex = 0; // Keep track of the current image
-        
-        function fetchAndDisplayImages() {
-            fetch('assets/img/fotopro/fotopro.json')
-                .then(response => response.json())
-                .then(images => {
-            imagesArray = images; // Store the images array
-            shuffleArray(imagesArray); // Randomize the order of images
-            displayImages(imagesArray);
-                })
-                .catch(error => console.error('Error:', error));
-        }
-        
-        function displayImages(images) {
-            const imageContainer = document.getElementById('image-container');
-            imageContainer.innerHTML = '';
-        
-            for (let i = 0; i < images.length; i++) {
-                let img = document.createElement('img');
-                img.src = images[i].src;
-                img.alt = images[i].alt;
-                img.classList.add('popup-img');
-                imageContainer.appendChild(img);
-            }
-        
-            let imgs = document.getElementsByClassName('popup-img');
-            for (let i = 0; i < imgs.length; i++) {
-                imgs[i].addEventListener('click', function(){
-                    showModal(i); // Pass the index to the showModal function
-                });
-            }
-        
-            var span = document.getElementsByClassName("close")[0];
-            span.onclick = function() { 
-                document.getElementById('myModal').style.display = "none";
-            }
-        }
-        
-        // Show modal and set current image index
-        function showModal(index) {
-            currentImageIndex = index;
-        
-            var modal = document.getElementById('myModal');
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-        
-            modal.style.display = "block";
-            modalImg.src = imagesArray[index].src;
-            captionText.innerHTML = imagesArray[index].alt;
-        }
-        
-        // Handle arrow key navigation
-        document.addEventListener('keydown', function(event) {
-            var modal = document.getElementById('myModal');
-        
-            if(modal.style.display === "block") { // only if modal is open
-                if(event.key === "ArrowRight") {
-                    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
-                    showModal(currentImageIndex);
-                } else if(event.key === "ArrowLeft") {
-                    currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
-                    showModal(currentImageIndex);
-                }
-            }
-        });
-        
-        // Add click event listeners to your buttons
-        document.getElementById('prevButton').addEventListener('click', function() {
-            // move to the previous image
-            currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
-            showModal(currentImageIndex);
-        });
-        
-        document.getElementById('nextButton').addEventListener('click', function() {
-            // move to the next image
-            currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
-            showModal(currentImageIndex);
-        });
-        
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]]; // swap elements
-            }
-        }
+    
+  document.addEventListener("DOMContentLoaded", function () {
+    fetchAndDisplayImages();
+
+    const viewToggleButton = document.getElementById("view-toggle");
+    const shuffleButton = document.getElementById("shuffle-button");
+    const imageContainer = document.getElementById("image-container");
+
+    viewToggleButton.addEventListener("click", function () {
+      imageContainer.classList.toggle("masonry");
+    });
+
+    shuffleButton.addEventListener("click", function () {
+      shuffleArray(imagesArray);
+      displayImages(imagesArray);
+    });
+  });
+
+  let imagesArray; // Hold the array of images
+  let currentImageIndex = 0; // Keep track of the current image
+
+  function fetchAndDisplayImages() {
+    fetch("assets/img/fotopro/fotopro.json")
+      .then((response) => response.json())
+      .then((images) => {
+        imagesArray = images; // Store the images array
+        shuffleArray(imagesArray); // Randomize the order of images
+        displayImages(imagesArray);
+      })
+      .catch((error) => console.error("Error:", error));
+  }
+
+  function displayImages(images) {
+    const imageContainer = document.getElementById("image-container");
+    imageContainer.innerHTML = "";
+
+    for (let i = 0; i < images.length; i++) {
+      let img = document.createElement("img");
+      img.src = images[i].src;
+      img.alt = images[i].alt;
+      img.classList.add("popup-img");
+      img.loading = "lazy"; // Set lazy loading attribute
+      img.style.opacity = 0; // Initially set the opacity to 0
+      imageContainer.appendChild(img);
+
+      // Add a small animation when the image is loaded
+      img.addEventListener("load", function () {
+        img.style.opacity = 1; // Set the opacity to 1 to show the image
+        img.classList.add("fade-in"); // Add a fade-in animation class
+      });
+    }
+
+    let imgs = document.getElementsByClassName("popup-img");
+    for (let i = 0; i < imgs.length; i++) {
+      imgs[i].addEventListener("click", function () {
+        showModal(i); // Pass the index to the showModal function
+      });
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+      document.getElementById("myModal").style.display = "none";
+    };
+  }
+
+  // Show modal and set current image index
+  function showModal(index) {
+    currentImageIndex = index;
+
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    modal.style.display = "block";
+    modalImg.src = imagesArray[index].src;
+    captionText.innerHTML = imagesArray[index].alt;
+  }
+
+  // Handle arrow key navigation
+  document.addEventListener("keydown", function (event) {
+    var modal = document.getElementById("myModal");
+
+    if (modal.style.display === "block") {
+      // only if modal is open
+      if (event.key === "ArrowRight") {
+        currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+        showModal(currentImageIndex);
+      } else if (event.key === "ArrowLeft") {
+        currentImageIndex =
+          (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+        showModal(currentImageIndex);
+      }
+    }
+  });
+
+  // Add click event listeners to your buttons
+  document.getElementById("prevButton").addEventListener("click", function () {
+    // move to the previous image
+    currentImageIndex =
+      (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+    showModal(currentImageIndex);
+  });
+
+  document.getElementById("nextButton").addEventListener("click", function () {
+    // move to the next image
+    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+    showModal(currentImageIndex);
+  });
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]]; // swap elements
+    }
+  }
+
+
         </script>
         
         
