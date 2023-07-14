@@ -67,13 +67,16 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
     position: fixed !important;
 }
 
+
+
+
 .fade-in {
   animation: fade-in-animation .5s ease-in-out;
   
 }
 
 .fade-inB {
-  animation: fade-in-animation 1.5s ease-in-out;
+  animation: fade-in-animation 1s ease-in-out;
   
 }
 
@@ -86,6 +89,31 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
   }
 }
 
+.blur {
+  animation: blur-fade-animation 1.7s ease-in-out;
+}
+
+@keyframes blur-fade-animation {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+   
+  }
+  50% {
+    filter: blur(3px);
+    opacity: 1;
+  
+  }
+  100% {
+    filter: blur(0);
+    
+  }
+}
+
+
+
+
+
        
     </style>
     
@@ -97,10 +125,10 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
            </header>
 
     <div class="container_buttons fade-inB">
-        <button  id="view-toggle" >Mediación</button>
-        <button  >Retrato</button>
-        <button ><a href="index.html">Conciertos</a></button>
-        <button id="shuffle-button">Proyectos</button>
+        <button onclick="filterImages('mediacion')"  >Mediación</button>
+        <button onclick="filterImages('retrato' ,'bodas' ,'xv')"  >Retrato</button>
+        <button onclick="filterImages('conciertos')" >Conciertos</button>
+        <button onclick="filterImages('proyectos')" >Proyectos</button>
 
         <!-- <button> <a href="https://kwalhia.com/Entrevistas">Podcast</a></button> -->      
     </div>
@@ -115,11 +143,9 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
       </div>
       </div>
       <script>
-     
         function toggleDropdown() {
      const dropdownContent = document.getElementById("dropdown");
      dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";}
-   
    </script>
     
     <!-- <div class="statment">
@@ -137,9 +163,9 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
 
     
 
-    <section id="galeria">
+    <section id="galeria" style="padding-top: 20px;">
         <div class="fotos_main">
-            <div id="image-container" class="fotos masonry"></div>
+            <div id="image-container" class="fotos masonry blur"></div>
         </div>
         <div id="myModal" class="modal">
             <span class="close">&times;</span>
@@ -270,8 +296,22 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
     }
   }
 
+  function filterImages(category) {
+  const filteredImages = imagesArray.filter(image => image.category === category);
+  displayImages(filteredImages);
+}
+
 
         </script>
+
+        <!--Filter-->
+        <!-- <script>
+            function filterImages(category) {
+  const filteredImages = imagesArray.filter(image => image.category === category);
+  displayImages(filteredImages);
+}
+
+        </script> -->
         
         
     	<a href="https://wa.me/8119243339?text=Hola!%20Me%20gustaría%20saber%20¿qué%20fechas%20tienen%20disponibles?" class="whatsapp" target="_blank"> 
