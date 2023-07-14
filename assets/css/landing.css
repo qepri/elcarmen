@@ -302,15 +302,15 @@ margin-bottom: 350px;
         
         .dropdown-content {
 
-        font-family: 'Syne', serif;
-        background-color: #494949;
-        display: none;
-        position: fixed;
-        top: 4.5%;
-        min-width: 90vw;
-        height: 30vh;
-        z-index: 1;
-        box-shadow: 0px 0px 300px 0px rgba(0, 0, 0, 0.563);
+          font-family: 'Syne', serif;
+          background-color: #494949;
+          display: none;
+          position: fixed;
+          margin: 0 auto;
+          top: 4.5%;
+          width: 100%;
+          z-index: 1;
+       
         }
         
         .dropdown-content a {
@@ -318,6 +318,10 @@ margin-bottom: 350px;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        }
+
+        .dropdown-content a:hover {
+          background-color: green;
         }
     }
 
