@@ -297,21 +297,24 @@ margin-bottom: 350px;
         color: #ffffff;
         font-family: 'Synes', serif;
         text-transform: uppercase;
+        z-index: 9999;
         }
         
         .dropdown-content {
-        font-family: 'Roboto Mono', monospace;
-        background-color: #ffffff;
+
+        font-family: 'Syne', serif;
+        background-color: #494949;
         display: none;
-        position: absolute;
-        margin-top: 2vh;
-        min-width: 160px;
+        position: fixed;
+        top: 4.5%;
+        min-width: 90vw;
+        height: 30vh;
         z-index: 1;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 300px 0px rgba(0, 0, 0, 0.563);
         }
         
         .dropdown-content a {
-        color: black;
+        color: rgb(255, 255, 255);
         padding: 12px 16px;
         text-decoration: none;
         display: block;

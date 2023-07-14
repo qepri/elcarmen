@@ -111,6 +111,18 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
 }
 
 
+::-webkit-scrollbar {
+  width: 1.5vw; 
+  background-color: black;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(152, 152, 152); 
+  border-radius: 20px; 
+}
+
+
 
 
 
@@ -136,17 +148,29 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
     <div class="nav_mobile fade-inB">
         <button onclick="toggleDropdown()" class="dropdown-btn">menú</button>
         <div id="dropdown" class="dropdown-content">
-            <a id="view-toggle" >Mediación</a>
-            <a >Retrato</a>
-           <a href="index.html">Conciertos</a>
-            <a id="shuffle-a">Proyectos</a>
+            <a onclick="filterImages('mediacion')" >Mediación</a>
+            <a onclick="filterImages('retrato' ,'bodas' ,'xv')" >Retrato</a>
+            <a onclick="filterImages('conciertos')">Conciertos</a>
+            <a onclick="filterImages('proyectos')">Proyectos</a>
       </div>
       </div>
       <script>
         function toggleDropdown() {
-     const dropdownContent = document.getElementById("dropdown");
-     dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";}
-   </script>
+          const dropdownContent = document.getElementById("dropdown");
+          dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+      
+        // Add an event listener to all the <a> elements within the dropdown
+        const dropdownLinks = document.querySelectorAll("#dropdown a");
+        dropdownLinks.forEach(link => {
+          link.addEventListener("click", () => {
+            // Hide the dropdown after a link is clicked
+            const dropdownContent = document.getElementById("dropdown");
+            dropdownContent.style.display = "none";
+          });
+        });
+      </script>
+      
     
     <!-- <div class="statment">
         
@@ -181,25 +205,8 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
     </section>
     <script>
     
-  document.addEventListener("DOMContentLoaded", function () {
-    fetchAndDisplayImages();
-
-    const viewToggleButton = document.getElementById("view-toggle");
-    const shuffleButton = document.getElementById("shuffle-button");
-    const imageContainer = document.getElementById("image-container");
-
-    viewToggleButton.addEventListener("click", function () {
-      imageContainer.classList.toggle("masonry");
-    });
-
-    shuffleButton.addEventListener("click", function () {
-      shuffleArray(imagesArray);
-      displayImages(imagesArray);
-    });
-  });
-
-  
-  let imagesArray; // Hold the array of images
+    let imagesArray; // Hold the array of images
+let filteredImages; // Hold the filtered array of images
 let currentImageIndex = 0; // Keep track of the current image
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -277,8 +284,14 @@ function showModal(index) {
   const captionText = document.getElementById("caption");
 
   modal.style.display = "block";
-  modalImg.src = filteredImages[index].src; // Update to use filteredImages array
-  captionText.innerHTML = filteredImages[index].alt; // Update to use filteredImages array
+  
+  if (filteredImages) {
+    modalImg.src = filteredImages[index].src; // Update to use filteredImages array
+    captionText.innerHTML = filteredImages[index].alt; // Update to use filteredImages array
+  } else {
+    modalImg.src = imagesArray[index].src;
+    captionText.innerHTML = imagesArray[index].alt;
+  }
 }
 
 // Handle arrow key navigation
@@ -317,17 +330,10 @@ function shuffleArray(array) {
   }
 }
 
-
 function filterImages(...categories) {
   filteredImages = imagesArray.filter((image) => categories.includes(image.category));
   displayImages(filteredImages);
 }
-
-
-  
-
-
-
 
 
         </script>
