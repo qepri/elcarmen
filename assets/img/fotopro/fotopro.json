@@ -300,6 +300,12 @@
     "filename": "IMG_9833-18.jpg"
   },
   {
+    "src": "assets/img/fotopro/mediacion/fundacion/IMG_0003.jpg",
+    "category": "mediacion",
+    "subcategory": "fundacion",
+    "filename": "IMG_0003.jpg"
+  },
+  {
     "src": "assets/img/fotopro/mediacion/fundacion/IMG_1299.jpg",
     "category": "mediacion",
     "subcategory": "fundacion",
@@ -832,5 +838,59 @@
     "category": "xv",
     "subcategory": "ximena",
     "filename": "IMG_7396.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9685-Edit.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9685-Edit.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9704.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9704.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9709.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9709.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9720-Edit.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9720-Edit.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9824.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9824.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9866.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9866.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9909.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9909.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9919.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9919.jpg"
+  },
+  {
+    "src": "assets/img/fotopro/xv/yaretzi/IMG_9934.jpg",
+    "category": "xv",
+    "subcategory": "yaretzi",
+    "filename": "IMG_9934.jpg"
   }
 ]

@@ -48,6 +48,7 @@ C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\mediacion\esfera\IMG
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\mediacion\esfera\IMG_6999-16.jpg
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\mediacion\esfera\IMG_9600-17.jpg
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\mediacion\esfera\IMG_9833-18.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\mediacion\fundacion\IMG_0003.jpg
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\mediacion\fundacion\IMG_1299.jpg
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\mediacion\fundacion\IMG_1550.jpg
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\mediacion\fundacion\IMG_1756.jpg
@@ -137,3 +138,12 @@ C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\ximena\IMG_7236.j
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\ximena\IMG_7314.jpg
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\ximena\IMG_7349.jpg
 C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\ximena\IMG_7396.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9685-Edit.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9704.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9709.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9720-Edit.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9824.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9866.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9909.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9919.jpg
+C:\Users\qepri\Documents\GitHub\elcarmen\assets\img\fotopro\xv\yaretzi\IMG_9934.jpg
