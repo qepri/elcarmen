@@ -112,7 +112,7 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
 
 
 ::-webkit-scrollbar {
-  width: 1.5vw; 
+  width: 1vw; 
   background-color: black;
 }
 
@@ -140,7 +140,8 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
         <button onclick="filterImages('mediacion')"  >Mediación</button>
         <button onclick="filterImages('retrato' ,'bodas' ,'xv')"  >Retrato</button>
         <button onclick="filterImages('conciertos')" >Conciertos</button>
-        <button onclick="filterImages('proyectos')" >Proyectos</button>
+        <button onclick="filterImages('portafolio')" >
+            <a href="portfolio.html">portafolio</a></button>
 
         <!-- <button> <a href="https://kwalhia.com/Entrevistas">Podcast</a></button> -->      
     </div>
@@ -151,7 +152,7 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
             <a onclick="filterImages('mediacion')" >Mediación</a>
             <a onclick="filterImages('retrato' ,'bodas' ,'xv')" >Retrato</a>
             <a onclick="filterImages('conciertos')">Conciertos</a>
-            <a onclick="filterImages('proyectos')">Proyectos</a>
+            <a  href="portfolio.html">portafolio</a>
       </div>
       </div>
       <script>
@@ -188,7 +189,7 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
         .cover {
             display:flex; 
             padding:  3vh 5vw 0px 5vw;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
             
         }
@@ -206,18 +207,21 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
         }
 
         .heading div {
-            width: 100%; padding: 1%;
+            width: 100%; 
+            padding: 1%;
+            text-align: justify;
         }
 
         .heading img {
-            width: 90%; height: 50%;
+            width: 90%; height: auto;
         }
 
         .heading a {
-            font-size: 20px;
-            padding: 5px;
+            font-size: 25px;
+            padding: 5px 40px 5px 40px;
             color: white;
             background-color: black;
+            text-decoration: none;
         }
 
         .heading a:hover {
@@ -229,7 +233,7 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
     </style>
 
     
-<section class="cover">
+<section class="cover blur">
     <div class="heading" >
         <div > <h1>XV Yaretzi</h1>
         <p>¡Muchas felicidades!</p></div>   
@@ -242,10 +246,15 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
             <ul>
                 <li> Luz Natural + Luz artificial</li>
                 <li><h2>35 fotografías</h2></li>
-                <li> <h3> Edición Base</h3>
-                    <p>correción de color: balance de blancos, contrastes y luminosidad</p> </li>
-               
+                <li> 
+                    <h3> Edición Base</h3>
+                    <p>Correción de color </p>
+                    <p> Balance de blancos 
+                    <p>Contrastes </p>
+                    <p>Luminosidad</p>
+                     </li>
                <li>
+
                 <h2>🎁 Extras</h2>
                 <li>
                     <h2>+35 fotografías</h2>
@@ -265,7 +274,7 @@ https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
                </li>
                <div style="flex-grow: 2; text-align: center;">
      
-               <h3> <a style="padding: 5px 40px 5px 40px;" href="https://drive.google.com/drive/folders/1F3WQr9tio3gteE1FmZF4xLxDRxdkMbOO"
+               <h3> <a style="" href="https://drive.google.com/drive/folders/1F3WQr9tio3gteE1FmZF4xLxDRxdkMbOO"
                    target="_blank">Descarga</a></h3>
                </div>
                 </li>
