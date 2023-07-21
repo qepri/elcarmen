@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Change Over Time</title>
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+</head>
+<body>
+    <style>
+       
+
+#display-image {
+display: block;
+margin: 0 auto;
+}
+
+#gallery {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #gallery {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+    <h2>
+        <a href="sobremi.html"> 📸  Sergio Aguirrre </a>
+       </h2>
+    <select id="subcategory-select"></select>
+   
+   <div class="img_cover"> <img id="display-image"> </div>
+    <div id="gallery"></div> 
+</body>
+</html>
+    <script src="script.js"></script>
+    <script>
+       let imgIndex = 0;
+let images = [];
+let intervalId = null;
+
+fetch("assets/img/fotopro/fotopro.json")
+.then(response => response.json())
+.then(imagesJson => {
+  let uniqueSubcategories = [...new Set(imagesJson.map(image => image.subcategory))];
+  let selectElement = document.getElementById("subcategory-select");
+
+  uniqueSubcategories.forEach(subcategory => {
+    let option = document.createElement("option");
+    option.text = subcategory;
+    option.value = subcategory;
+    selectElement.add(option);
+  });
+
+  selectElement.addEventListener("change", function() {
+    filterImages(this.value);
+  });
+
+  filterImages(selectElement.value);
+
+  function filterImages(subcategory) {
+    images = imagesJson.filter(image => image.subcategory === subcategory);
+    imgIndex = 0;
+    startImageCycle();
+    loadGallery(images);
+  }
+});
+
+function startImageCycle() {
+  if (intervalId !== null) {
+    clearInterval(intervalId);
+  }
+
+  displayImage();
+
+  intervalId = setInterval(displayImage, 3000);
+}
+
+function displayImage() {
+  document.getElementById('display-image').src = images[imgIndex].src;
+  imgIndex = (imgIndex + 1) % images.length;
+}
+
+function loadGallery(images) {
+  let galleryDiv = document.getElementById('gallery');
+  galleryDiv.innerHTML = '';
+  
+  images.forEach(image => {
+    let img = document.createElement("img");
+    img.src = image.src;
+    img.style.width = '100%';
+    galleryDiv.appendChild(img);
+  });
+}
+
+
+
+    </script>
+</body>
+</html>

@@ -1,107 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio Aguirrre</title>
-    <link rel="stylesheet" href="assets/css/landing.css">
-</head>
-<body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sergio Aguirrre</title>
+      <link rel="stylesheet" href="assets/css/landing.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <style>
+         body {
+         padding: 2vw 13vw 6vw 10vw;
+         }
 
-    <style>
-     
-        .proyectos_menu {
-            display: flex;
-            width: 50vw;
-            right: 0;
-            padding: 3vw;
-        }
-
-        .proyectos_menu ul {
-            padding-left: 2vw;
-            flex-grow: 1;
-        }
-        
-      
-    </style>
-
-    <header>
-        <h2>
-            📸  Sergio Aguirrre
-        </h2>
-    </header>
-
-    <section class="proyectos_menu">
-    <div >
-        <img src="assets/img/fotopro/retrato/era/IMG_1679.jpg" alt="">
-    </div>
-    
-   
-        <div>
-            <ul>
-                <h2>
-                    Mediación Cultural
-                </h2>
-                <p>
-                    Descripción
-                </p>
-                <li>
-                    Fundación Hogares
-                </li>
-                <li>
-                    Conarte
-                </li>
-                <li>
-                    Secretaria de Cultura
-                </li>
-            </ul>
-            <ul>
-                <h2>
-                    Música y Conciertos
-                </h2>
-                <li>
-                    Edwin Luna y la Trakalosa de Monterrey
-                </li>
-                <li>
-                    El real Agasajo
-                </li>
-            </ul>
-
-            <ul>
-              <h2>  Proyectos Fotograficos </h2>
-                <li>
-                    Lo que se viene
-                </li>
-                <li>
-                    Sin Nombre
-                </li>
-                <li>
-                    Golem
-                </li>
-                <li>
-                    Chipinque
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-               <h2> Gestión Cultural </h2>
-                <li>
-                    kwalhia.com
-                </li>
-                <li>
-                    ExperimentalFilms.Online
-                </li>
-                <li>
-                    qepri.xyz
-                </li>
-                <li>
-                    EsferaVirtual.xyz
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-
-</body>
+         .rss div {
+           padding: .5%;
+         }
+         .rss a {
+         background-color: black;
+         color: white;
+         }
+         .rss a:hover {
+         background-color: rgb(193, 193, 193);
+         color: rgb(0, 0, 0);
+         }
+         .bio {
+         display: flex;
+         flex-wrap: nowrap;
+         align-items: center;
+         justify-content: space-between;
+         margin-bottom: 3rem;
+         text-align: justify;
+         }
+         .bio img {
+         max-width: 450px;
+         height: auto;
+         object-fit: cover;
+         padding: 5vw;
+         }
+         .bio div {
+         flex-grow: 1;
+         margin-left: 2rem;
+         }
+         .proyectos {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 2rem;
+         text-align: justify;
+         /* padding: 0 4vw 2vh 4vw; */
+         }
+         .proyectos ul {
+         list-style-type: none;
+         padding: 0;
+         }
+         @media screen and (max-width: 1234px) {
+         .bio {
+         flex-direction: column;
+         }
+         .bio img {
+         margin-bottom: 2rem;
+         }
+         .proyectos {
+         grid-template-columns: 1fr;
+         }
+         }
+      </style>
+      <header>
+         <h2>
+          <a href="index.html">  📸  Sergio Aguirrre </a>
+         </h2>
+      </header>
+      <a href="https://wa.me/8119243339?text=Hola!%20Me%20gustaría%20saber%20¿qué%20fechas%20tienen%20disponibles?" class="whatsapp" target="_blank"> 
+      <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+      <section class="bio blur" style="position: relative;">
+         <img src="assets/img/fotopro/yo/SergioAguirrre.jpg" alt="" >
+         <div>
+            <h1>sobre mi</h1>
+            <p> 
+               Con sólida formación en diversas formas de expresión visual y audiovisual,
+               he desarrollado mis habilidades artísticas a través de una variedad de actividades profesionales. 
+               En mis inicios documentando la actividad institucional de mi Alma Máter (UANL - FAV), para pasar a los escenarios a lo largo y
+               ancho de la República Mexicana acompañado de diferentes grupos musicales. 
+            </p>
+            <p><br>
+               Simultáneamente he compaginado mi crecimiento como artista por medio de mi trabajo como fotógrafo profesional
+               de forma independiente. Para familias que desean preservar sus memorias más valiosas de la mejor forma posible
+               como para instituciones que saben valorar la importancia de su imagen. 
+            </p>
+         </div>
+         <br>
+         <!-- <p>Simultáneamente, he nutrido mi crecimiento como artista trabajando como fotógrafo profesional
+            independiente, combinando mi amor por el arte con la técnica fotográfica. Mi trabajo va dirigido
+            tanto a familias que buscan preservar sus recuerdos más preciados, como a instituciones conscientes
+            del valor que una imagen de alta calidad puede aportar a su reputación. 
+            </p> <br>
+            <p>   
+            Además de mi trabajo como profesional construyendo imágenes reconozco el valor de compartir los conocimientos
+            y llevo ya más de 5 años, como gestor/mediador cultural gestionando proyectos y eventos culturales, impartiendo
+            talleres de sensibilización artística a grupos de niños, jóvenes y adultos en diferentes municipios de Nuevo León
+            en conjunto con Fundación Hogares, CONARTE y Secretaria de Cultura. De manera autogestiva  a nivel internacional
+            con Kwalhia y Experimental Films Online, entre otros. 
+            </p> <br>
+            <p>    
+            Mi objetivo es crear imágenes que no sólo capturan momentos, sino que también evocan emociones atemporales
+            y narran historias vívidas. Creo firmemente que cada foto cuenta una verdad y mi compromiso es ayudar a mis
+            clientes a contar las suyas de la manera más impactante y auténtica posible.
+            </p> <br> -->
+         <div>
+      </section>
+      <section class="proyectos blur">
+      <ul>
+      <h2>
+      Mediación Cultural
+      </h2>
+      <p>
+      Conjunto de prácticas, herramientas y metodologías transdisciplinares, que fomenta la democratización cultural y el pensamiento crítico,
+      poniendo en el centro las relaciones entre personas.
+      </p>
+      <li>
+      Fundación Hogares
+      </li>
+      <li>
+      Conarte
+      </li>
+      <li>
+      Secretaria de Cultura
+      </li>
+      </ul>
+      <ul>
+      <h2>
+      Música y Conciertos
+      </h2>
+      <li>
+      Edwin Luna y la Trakalosa de Monterrey
+      </li>
+      <li>
+      El real Agasajo
+      </li>
+      </ul>
+      <ul>
+      <h2>  Proyectos Fotográficos </h2>
+      <li>
+        Mundanamente Excepcional
+      </li>
+      <li>
+      Lo que se viene
+      </li>
+      <li>
+      Sin Nombre
+      </li>
+      <li>
+      Golem
+      </li>
+      <li>
+      Chipinque
+      </li>
+      </ul>
+      </div>
+      <div>
+      <ul>
+      <h2> Gestión Cultural </h2>
+      <li>
+      kwalhia.com
+      </li>
+      <li>
+      ExperimentalFilms.Online
+      </li>
+      <li>
+      qepri.xyz
+      </li>
+      <li>
+      EsferaVirtual.xyz
+      </li>
+      </ul>
+      </div>
+      </section>
+      <section style=" padding:6vw 5vh 6vw 0;" class="rss">
+         <div>
+            <h3>Sígueme en</h3>
+            <span> <a href="https://Facebook.com/@Sergio.Aguirrre" target="_blank">Facebook</a> <a href="https://www.instagram.com/sergio.aguirrre/" target="_blank">Instagram</a> <b> @Sergio.Aguirrre</b>      
+            </span>
+         </div>
+         <div>
+            <span><a href="https://kwalhia.com/Entrevistas"> Escucha mi Podcast </a></span>
+         </div>
+         <div>
+            <span> <a href="https://SergioAguirrre.xyz">Diseño y Desarrollo WEB / VR+AR</a></span>
+         </div>
+         <a href="https://qepri.xyz" target="_blank"> 
+         <img src="qepri_logo.png" alt="" style="filter: invert(); background-color: rgb(0, 0, 0) !important;">
+         </a>
+      </section>
+   </body>
 </html>
