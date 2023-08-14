@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <style>
+        * {margin:  auto 0;}
+        body {
+            background-color: rgb(141, 138, 151);
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header {
+    position: fixed;
+    width: 100%;
+    font-size: 3vh;
+    text-align: start;
+    padding-right: 20px ;
+    background-color: black;
+    letter-spacing: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: solid 5px #ff1e00;
+    }
+
+    header h1 {
+        padding-left: 55px;
+    }
+        .chat-container {
+
+    width: 80vw;
+    height: 90vh;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(49, 49, 49);
+}
+
+#chat-box {
+   
+    height: 100%;
+    overflow-y: scroll;
+    PADDING-TOP: 16vh;
+}
+
+.message-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#message {
+    flex: 1;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #474747;
+    border-radius: 20px;
+    color: white;
+}
+
+#send-button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+.user-message, .bot-message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #3953ff;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+
+    </style>
+    <header>
+     <h1>   El Blog del Suicida </h1>
+    </header>
+    <div class="chat-container">
+        <div id="chat-box">
+            <!-- Chat messages will go here -->
+        </div>
+        <div class="message-input">
+            <input type="text" id="message" placeholder="Type your message">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+    <script>
+ // Get the chat box and send button elements
+const chatBox = document.getElementById('chat-box');
+const sendButton = document.getElementById('send-button');
+const inputBox = document.getElementById('message');
+
+let messageCount = 0; // Variable to track number of user messages
+
+// Add an event listener to the send button
+sendButton.addEventListener('click', async () => {
+
+    // Increment the message count
+    messageCount++;
+
+    // Get the user's message
+    const userMessage = inputBox.value;
+
+    // Clear the input box
+    inputBox.value = "";
+
+    // Add the user's name to the beginning of the message
+    const fullMessage = "JORGE LUIS: " + userMessage;
+
+    // Add the user's message to the chat box
+    const userMessageElement = document.createElement('div');
+    userMessageElement.classList.add('user-message');
+    userMessageElement.textContent = fullMessage;
+    chatBox.appendChild(userMessageElement);
+
+    // Scroll to the bottom of the chat box
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    // If the message count is more than 1, skip the bot's response
+    if (messageCount > 1) return;
+    
+            // Bot response messages
+            const botMessages = [
+                "hada69: Hola, Jorge Luis.Bienvenido a nuestra comunidad.Aquí no te juzgamos por las decisiones que tomes, somos libres de decidir sobre nuestra vida y muerte.En respuesta a tu pregunta, el método más efectivo es una bala, aunque no es fácil de conseguir. Hace poco tiempo dialogamos sobre tu duda y llegamos a la conclusión de que lo más efectivo y fácil de conseguir es la horca, aunque seguro que duele.Porque es perder la respiración.Pero a cuanto a conseguir lo que necesitas para hacerlo es lo más sencillo, más que una pistola o un veneno.",
+                "Vegeta737: Creo que ninguno de los métodos podemos llamarlos eficaces, he estado investigando y debes saber que puede salir mal, con una pistola puedes fallar y quedar paralizado o con lesiones cerebrales. Con la horca podrías quedar con daño cerebral por la falta de oxígeno antes de morir,  con pastillas podrías acabar en el hospital con un lavado de estómago y daño a tus órganos vitales. Ninguno de estos métodos es seguro, ni mucho menos indoloro."
+            ];
+        // Type each message with a delay between them
+        for (let msg of botMessages) {
+        await typeMessage(msg);
+        await new Promise(resolve => setTimeout(resolve, 2000));
+    }
+});
+
+// Function to type a message in the chat box
+function typeMessage(message) {
+    return new Promise(async resolve => {
+        // Create the bot's message element
+        const botMessageElement = document.createElement('div');
+        botMessageElement.classList.add('bot-message');
+        chatBox.appendChild(botMessageElement);
+
+        // Type each character of the message
+        for (let char of message) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+            botMessageElement.textContent += char;
+            // Scroll to the bottom of the chat box
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        resolve();
+    });
+}
+    </script>
+    
+</body>
+</html>
