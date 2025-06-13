@@ -4,7 +4,7 @@
       "subtitle": "Sesiones Individual - Pareja",
       "description1": "20 Fotografías Profesionales",
       "description2": "Entrega Digital",
-      "price": "Promo: $750* MXN",
+      "price": "Promo: $4750* MXN",
       "category": "individual"
     },
     "xv": {
@@ -12,7 +12,7 @@
       "subtitle": "Fotografía para XV Años",
       "description1": "35 Fotografías Profesionales",
       "description2": "Entrega Digital",
-      "price": "Promo: $3750* MXN",
+      "price": "Promo: $6750* MXN",
       "category": "xv"
     },
     "boda": {
@@ -20,7 +20,7 @@
       "subtitle": "Sesión para Bodas",
       "description1": "50 Fotografías Profesionales",
       "description2": "Entrega Digital",
-      "price": "Promo: $5000* MXN",
+      "price": "Promo: $10500* MXN",
       "category": "boda"
     },
     "evento": {
@@ -28,7 +28,7 @@
       "subtitle": "Documentación fotográfica",
       "description1": "Fotografías Profesionales",
       "description2": "Entrega Digital",
-      "price" : "Promo: 3 horas $3500* MXN",
+      "price" : "Promo: 3 horas $15500* MXN",
       "category": "evento"
     }
   }
