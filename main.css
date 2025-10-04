@@ -130,18 +130,13 @@ body.dark-theme button {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-left: 2em;
-    padding-right: 2em;
     padding-top: 20px;
-    margin-left: 3em;
-    margin-right: 3em;
 }
 
 
 .fotos, img {
    
    padding: 1%;
-    width: 80%;
     height:auto;
 }
 
@@ -158,6 +153,19 @@ body.dark-theme button {
     margin-bottom: 1em;
     /* Full width to span multiple columns */
     width: 100%;
+}
+
+@media (max-width: 576px) {
+    #image-container.fotos {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    #image-container.fotos img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
