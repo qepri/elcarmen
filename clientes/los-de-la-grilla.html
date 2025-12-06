@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguirrre Fotografía</title>
+    <style>
+        /* Mobile-first, simple responsive styles */
+        :root{--max-width:900px;--accent:#2a9d2a}
+        html,body{height:100%;}
+        body {
+            font-family:'Times New Roman', Times, serif;
+            margin:0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:4vw 4vw 6vh;
+            box-sizing:border-box;
+            background:#fff;
+            color:#111;
+        }
+        .wrap{width:100%;max-width:var(--max-width);box-sizing:border-box;padding:0 4vw}
+        h1{font-weight:700;font-style:italic;margin:0 0 2vh;font-size:clamp(1.25rem,4.5vw,2rem)}
+        .video-wrap{margin:2vh 0;}
+        video{width:100%;height:auto;max-height:65vh;border-radius:6px;background:#000;display:block}
+        .actions{margin-top:3vh}
+        .btn{
+            display:block;
+            box-sizing:border-box;
+            text-decoration:none;
+            background:var(--accent);
+            color:#fff;
+            padding:14px 22px;
+            border-radius:8px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight:800;
+            letter-spacing:0.02em;
+            box-shadow:0 3px 0 rgba(0,0,0,0.08);
+            transition:transform .08s ease,opacity .08s ease;
+            text-transform:uppercase;
+            font-size:clamp(0.95rem,2.4vw,1.1rem);
+            width:100%;
+            max-width:420px;
+            margin:0 auto;
+        }
+        .btn:active{transform:translateY(1px)}
+        /* Make the button full-width on small screens for easier tapping */
+        @media (max-width:480px){
+            .btn{width:100%;padding:14px 16px;font-size:1rem}
+            body{padding:6vw}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>¡Gracias por tu preferencia!</h1>
+
+        <section class="video-wrap">
+            <video src="assets/img/slideshow" muted autoplay playsinline loop preload="metadata" aria-label="Slideshow video"></video>
+        </section>
+
+        <div class="actions">
+            <a class="btn" href="https://drive.google.com/drive/folders/1feN-Aioe2ez__8hzaQxuvxirEEUqg1OW?usp=drive_link" target="_blank" rel="noopener noreferrer" role="button" aria-label="Abrir carpeta en Google Drive">Descargar</a>
+        </div>
+    </div>
+</body>
+</html>
