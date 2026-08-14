@@ -1,0 +1,13 @@
+name: Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    uses: qepri/migration-scripts/.github/workflows/deploy.yml@master
+    with:
+      script: deploy-static.sh
+    secrets:
+      vps_host: ${{ secrets.VPS_HOST }}
+      vps_ssh_key: ${{ secrets.VPS_SSH_KEY }}
